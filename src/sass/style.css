@@ -1,26 +1,17 @@
-@import "./normalize.css";
-/* forum-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Forum";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/forum-v18-latin-regular.woff2") format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/inter-v13-latin-regular.woff2") format("woff2");
-}
-/* inter-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../../fonts/inter-v13-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+/* Error: expected more input.
+ *   ,
+ * 7 | @import
+ *   |        ^
+ *   '
+ *   src\sass\style.scss 7:8  root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected more input.\a   \2577 \a 7 \2502  @import\d\a   \2502         ^\a   \2575 \a   src\\sass\\style.scss 7:8  root stylesheet";
+}
