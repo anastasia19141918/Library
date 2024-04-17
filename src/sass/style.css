@@ -35,10 +35,17 @@ a {
 }
 
 .title {
+  margin: 0;
   font-size: 4rem;
   font-family: "Forum", sans-serif;
   font-weight: 400;
   color: #0C0C0E;
+}
+
+.line {
+  width: 5rem;
+  height: 1px;
+  background-color: #0C0C0E;
 }
 
 .header {
