@@ -6,7 +6,7 @@
   font-family: 'Forum';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/forum-v18-latin-regular.woff2') format('woff2');
+  src: url('../../src/fonts/forum-v18-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -14,7 +14,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/inter-v13-latin-regular.woff2') format('woff2'); 
+  src: url('../../src/fonts/inter-v13-latin-regular.woff2') format('woff2'); 
 }
 /* inter-900 - latin */
 @font-face {
@@ -22,7 +22,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
-  src: url('../../fonts/inter-v13-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../../src/fonts/inter-v13-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 //fonts end
 
@@ -36,4 +36,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.title {
+  font-size: 4.0rem;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  color: #0C0C0E;
 }
