@@ -62,10 +62,11 @@ a {
 .header__title {
   margin: 0;
   color: #FFFFFF;
-  font-family: "Inter";
+  font-family: "Forum", sans-serif;
   font-weight: 400;
   font-size: 3rem;
   line-height: 5rem;
+  letter-spacing: 0.8px;
 }
 
 .header__icon {
@@ -83,7 +84,7 @@ a {
 }
 
 .header__navigation {
-  padding-left: 30%;
+  padding-left: 31%;
 }
 
 .header__itemns {
@@ -95,11 +96,11 @@ a {
 }
 
 .header__itemn {
-  margin-left: 37.7px;
+  margin-right: 34px;
   cursor: pointer;
 }
 
-.header__itemn:first-child {
+.header__itemn:last-child {
   margin-left: 0;
 }
 
