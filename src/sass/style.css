@@ -57,9 +57,10 @@ a {
 .header__icon {
   width: 28px;
   height: 28px;
-  background-image: url("../../src/img/header/icon_profile.png");
+  background-image: url("../../src/img/header/icon_profile.svg");
   background-size: 28px 28px;
   align-self: center;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -81,6 +82,7 @@ a {
 
 .header__itemn {
   margin-left: 37.7px;
+  cursor: pointer;
 }
 
 .header__itemn:first-child {
