@@ -1,0 +1,114 @@
+.libraryCard__title {
+  letter-spacing: 1.8px;
+}
+
+.libraryCard__cards {
+  display: flex;
+  padding: 40px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.libraryCard__form-title {
+  margin: 0 0 30px 0;
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.libraryCard__form {
+  padding: 20px 20px 26px 20px;
+  border: 3px solid $color-form;
+}
+
+.form {
+  width: 524px;
+  margin-bottom: 20px;
+  padding: 17px 17px 5px 17px;
+  background-color: $color-form;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 5.0rem;
+  letter-spacing: 0.7px;
+}
+
+.input__text, .input__number {
+  width: 500px;
+  padding: 10px 0px 5px 20px;
+  margin-bottom: 21px;
+  border-radius: 10px;
+  font-family: 'Forum', sans-serif;
+  font-size: 3.0rem;
+  font-weight: 400;
+  line-height: 5.0rem;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+}
+
+.libraryCard__butn {
+  text-align: center;
+}
+
+.libraryCard__button {
+  width: 242px;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+.libraryCard__account {
+  text-align: right;
+}
+
+.libraryCard__account-title {
+  margin: 0 0 30px 0;
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 36px;
+  letter-spacing: -1.6px;
+}
+
+.libraryCard__text {
+  width: 470px;
+  margin: 0 0 36px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 0.6px;
+}
+
+.libraryCard__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  gap: 0 20px;
+}
+
+.libraryCard__btn {
+  width: 75px;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  background-color: transparent;
+  cursor: pointer;
+}
