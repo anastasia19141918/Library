@@ -188,7 +188,7 @@ a {
 }
 
 .favorites {
-  padding: 42px 0px 15px 0px;
+  padding: 42px 0px 55px 0px;
 }
 
 .favorites__title {
@@ -340,6 +340,85 @@ input[type=radio]:checked::after {
   line-height: 1.2rem;
   letter-spacing: 1px;
   background: transparent;
+  cursor: pointer;
+}
+
+.shop__title {
+  letter-spacing: 1.3px;
+}
+
+.shop__text {
+  margin: 0 0 40px 0;
+  padding: 40px 0 0 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.shop__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__title {
+  margin: 0 0 40px 0;
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #BB945F;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}
+
+.menu__desc {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__dessert {
+  gap: 0 58px;
+}
+
+.menu__desc__coffe {
+  gap: 0 50px;
+}
+
+.shop__dessert {
+  text-align: right;
+}
+
+.menu__type {
+  width: 215px;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  color: #0C0C0E;
+}
+
+.menu__line {
+  width: 100px;
+  height: 1px;
+  align-self: center;
+  background-color: #BB945F;
+}
+
+.menu__price {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 2px;
+}
+
+.menu__desc__dessert {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

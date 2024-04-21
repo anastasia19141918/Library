@@ -1,5 +1,5 @@
 .favorites {
-  padding: 42px 0px 15px 0px;
+  padding: 42px 0px 55px 0px;
 }
 
 .favorites__title {
@@ -156,6 +156,7 @@ input[type='radio']:checked::after {
   line-height: 1.2rem;
   letter-spacing: 1px;
   background: transparent; 
+  cursor: pointer;
 }
 
 //slaider book end

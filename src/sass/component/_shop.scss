@@ -1,0 +1,79 @@
+.shop__title {
+  letter-spacing: 1.3px;
+}
+
+.shop__text {
+  margin: 0 0 40px 0;
+  padding: 40px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  letter-spacing: 2px;
+  line-height: 4.0rem;
+  text-align: center;
+}
+
+.shop__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu__title {
+  margin: 0 0 40px 0;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 4.0rem;
+  color: $color-form;
+  line-height: 4.0rem;
+  letter-spacing: 2px;
+}
+
+.menu__desc {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__dessert {
+  gap: 0 58px;
+}
+
+.menu__desc__coffe {
+  gap: 0 50px;
+}
+
+
+.shop__dessert {
+  text-align: right;
+}
+
+.menu__type {
+  width: 215px;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 4.0rem;
+  letter-spacing: 2px;
+  color: $color-header-footer;
+}
+
+.menu__line {
+  width: 100px;
+  height: 1px;
+  align-self: center;
+  background-color: $color-form;
+}
+
+.menu__price {
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 2px;
+}
+
+.menu__desc__dessert {
+  text-align: right;
+}
+
