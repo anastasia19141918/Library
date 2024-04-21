@@ -1,0 +1,24 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  &__twitter {
+    background-image: url('../../src/img/social-media/twitter.png');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  &__instagram {
+    background-image: url('../../src/img/social-media/instagram.png');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  &__facebook{
+    background-image: url('../../src/img/social-media/facebook.png');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+}
+

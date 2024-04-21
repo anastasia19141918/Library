@@ -1,0 +1,62 @@
+.footer {
+  padding: 18px 0 20px 0;
+  background-color: $color-header-footer;
+}
+
+.footer__contact {
+  display: flex;
+  margin-bottom: 17px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__text {
+  width: 229px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  color: $color-block-title;
+}
+
+.footer__media {
+  display: flex;
+  flex-direction: row;
+  gap: 0 15px;
+}
+
+.footer__days {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.footer__schedule {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  color: $color-block-title;
+}
+
+.footer__line {
+  width: 100%;
+  margin-bottom: 48px;
+  border: 1px solid $color-block-title;
+}
+
+.footer__school {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__inf {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  letter-spacing: 2px;
+  color: $color-block-title;
+}

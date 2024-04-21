@@ -90,6 +90,69 @@ a {
   margin: auto;
 }
 
+.footer {
+  padding: 18px 0 20px 0;
+  background-color: #0C0C0E;
+}
+
+.footer__contact {
+  display: flex;
+  margin-bottom: 17px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__text {
+  width: 229px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+}
+
+.footer__media {
+  display: flex;
+  flex-direction: row;
+  gap: 0 15px;
+}
+
+.footer__days {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.footer__schedule {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+}
+
+.footer__line {
+  width: 100%;
+  margin-bottom: 48px;
+  border: 1px solid #FFFFFF;
+}
+
+.footer__school {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__inf {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
 .header__navigation {
   padding-left: 31%;
 }
@@ -474,6 +537,10 @@ input[type=radio]:checked::after {
   margin-bottom: 20px;
 }
 
+.libraryCard {
+  padding: 0 0 45px 0;
+}
+
 .libraryCard__title {
   letter-spacing: 1.8px;
 }
@@ -585,6 +652,30 @@ input[type=radio]:checked::after {
   letter-spacing: 1px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.icon__twitter {
+  background-image: url("../../src/img/social-media/twitter.png");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.icon__instagram {
+  background-image: url("../../src/img/social-media/instagram.png");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.icon__facebook {
+  background-image: url("../../src/img/social-media/facebook.png");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
