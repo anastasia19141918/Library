@@ -1,0 +1,52 @@
+.contacts {
+  padding: 0 0 50px 0;
+}
+
+.contact__title {
+  letter-spacing: 1.3px;
+}
+
+.contacts__desk {
+  display: flex;
+  padding: 40px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 2.5px;
+  word-spacing: -1.6px;
+}
+
+.inquiries {
+  font-weight: 700;
+  color: $color-black;
+}
+
+//margin-top start
+
+.library {
+  margin-bottom: 40px;
+}
+
+.call {
+  margin-bottom: 20px;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.putterham {
+  margin-bottom: 40px;
+}
+
+.senior {
+  margin-bottom: 20px;
+}
+
+//margin top end

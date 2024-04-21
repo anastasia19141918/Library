@@ -343,6 +343,10 @@ input[type=radio]:checked::after {
   cursor: pointer;
 }
 
+.shop {
+  padding: 0 0 15px 0;
+}
+
 .shop__title {
   letter-spacing: 1.3px;
 }
@@ -419,6 +423,55 @@ input[type=radio]:checked::after {
 
 .menu__desc__dessert {
   text-align: right;
+}
+
+.contacts {
+  padding: 0 0 50px 0;
+}
+
+.contact__title {
+  letter-spacing: 1.3px;
+}
+
+.contacts__desk {
+  display: flex;
+  padding: 40px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 2.5px;
+  word-spacing: -1.6px;
+}
+
+.inquiries {
+  font-weight: 700;
+  color: #000000;
+}
+
+.library {
+  margin-bottom: 40px;
+}
+
+.call {
+  margin-bottom: 20px;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.putterham {
+  margin-bottom: 40px;
+}
+
+.senior {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
