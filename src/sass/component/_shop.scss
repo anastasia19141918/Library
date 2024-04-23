@@ -1,5 +1,11 @@
 .shop {
   padding: 0 0 15px 0;
+  @include media-destop-small {
+    padding: 0 20px 15px 20px;
+  }
+  @include media-tablet-big {
+    padding: 0 40px 15px 40px;
+  }
 }
 
 .shop__title {
@@ -15,12 +21,18 @@
   letter-spacing: 2px;
   line-height: 4.0rem;
   text-align: center;
+  @include media-destop  {
+    padding: 40px 20px 0 20px;
+  }
 }
 
 .shop__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @include media-destop  {
+    flex-direction: column;
+  }
 }
 
 .menu__title {
@@ -41,6 +53,9 @@
 
 .menu__dessert {
   gap: 0 58px;
+  @include media-destop-small {
+    justify-content: end;
+  }
 }
 
 .menu__desc__coffe {

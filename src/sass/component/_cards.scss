@@ -1,5 +1,8 @@
 .libraryCard {
   padding: 0 0 45px 0;
+  @include media-destop  {
+    padding: 20 45px;
+  }
 }
 
 .libraryCard__title {
@@ -11,6 +14,15 @@
   padding: 40px 0px 0px 0px;
   flex-direction: row;
   justify-content: space-between;
+  @include media-destop  {
+    flex-direction: column;
+  }
+}
+
+.libraryCard__block {
+  @include media-destop-small {
+    margin: auto;
+  }
 }
 
 .libraryCard__form-title {
@@ -27,6 +39,9 @@
 .libraryCard__form {
   padding: 20px 20px 26px 20px;
   border: 3px solid $color-form;
+  @include media-destop-small {
+    width: 600px;
+  }
 }
 
 .form {
@@ -77,6 +92,10 @@
 
 .libraryCard__account {
   text-align: right;
+  @include media-destop-small {
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+  }
 }
 
 .libraryCard__account-title {
@@ -96,6 +115,10 @@
   font-size: 2.0rem;
   line-height: 4.0rem;
   letter-spacing: 0.6px;
+  @include media-destop-small {
+    width: 600px;
+    margin: auto;
+  }
 }
 
 .libraryCard__buttons {
@@ -103,6 +126,10 @@
   flex-direction: row;
   justify-content:flex-end;
   gap: 0 20px;
+  @include media-destop-small {
+   padding: 36px 0px 0px 0px;
+   justify-content: center;
+  }
 }
 
 .libraryCard__btn {

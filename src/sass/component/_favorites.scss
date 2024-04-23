@@ -1,5 +1,8 @@
 .favorites {
   padding: 42px 0px 55px 0px;
+  @include media-tablet-big {
+    padding: 42px 30px 55px 30px;
+  }
 }
 
 .favorites__title {
@@ -85,6 +88,12 @@ input[type='radio']:checked::after {
   flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 220px;
+  flex-wrap: wrap;
+  @include media-destop  {
+    grid-template-columns: 510px;
+    justify-content: center;
+    gap: 80px 220px;
+  }
 }
 
 .book {
@@ -143,9 +152,19 @@ input[type='radio']:checked::after {
   position: absolute;
   margin-left: 24.2%;
   margin-top: -16.7%;
+  @include media-destop-small {
+    margin-left: 33%;
+    margin-top: -21%;
+  }
+  @include media-tablet-big {
+    margin-left: 40%;
+    margin-top: -25%;
+  }
+  @include media-tablet-big {
+    margin-left: 45%;
+    margin-top: -32%;
+  }
 }
-
-
 
 .book__btn {
   padding: 8px 25px;

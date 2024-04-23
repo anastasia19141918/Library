@@ -1,9 +1,10 @@
 @import"./normalize.css";
 
-@import"base/base";
-
+@import"abstracts/mixin";
 @import"abstracts/constans";
 @import"abstracts/placholder";
+
+@import"base/base";
 
 @import"layout/header";
 @import"layout/wrapper";

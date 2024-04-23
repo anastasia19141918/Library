@@ -1,6 +1,12 @@
 .header {
   padding: 20px 35px 5px 30px;
   background-color: $color-header-footer;
+  @include media-destop  {
+    padding: 20px 25px 5px 25px;
+  }
+  @include media-tablet-big {
+    padding: 20px 35px 5px 35px;
+  }
 }
 
 .header__wrapper {

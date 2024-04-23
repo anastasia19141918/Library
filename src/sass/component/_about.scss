@@ -19,6 +19,10 @@
   flex-direction: row;
   gap: 0 25px;
   overflow: hidden;
+  @include media-tablet-big {
+    width: 450px;
+    margin-left: 27%;
+  }
 }
 
 //slaider end

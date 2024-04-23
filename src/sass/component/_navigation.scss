@@ -1,6 +1,16 @@
 .header__navigation {
    padding-left: 31%;
- }
+   @include media-destop-big {
+    padding-left: 20%;
+  }
+
+  @include media-destop  {
+    padding-left: 10%;
+  }
+  @include media-tablet-big {
+    display: none;
+  }
+}
 
 .header__itemns {
   margin: 0;

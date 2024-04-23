@@ -1,0 +1,21 @@
+@mixin media-destop-big {
+  @media(max-width:$media-destop-big) {@content;}
+}
+
+@mixin media-destop {
+  @media(max-width:$media-destop) {@content;}
+}
+
+@mixin media-destop-small {
+  @media(max-width:$media-destop-small) {@content;}
+}
+
+@mixin media-tablet-big {
+  @media(max-width: $media-tablet-big) {@content;}
+}
+
+
+
+
+
+

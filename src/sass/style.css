@@ -59,6 +59,16 @@ a {
   padding: 20px 35px 5px 30px;
   background-color: #0C0C0E;
 }
+@media (max-width: 1404px) {
+  .header {
+    padding: 20px 25px 5px 25px;
+  }
+}
+@media (max-width: 990px) {
+  .header {
+    padding: 20px 35px 5px 35px;
+  }
+}
 
 .header__wrapper {
   display: flex;
@@ -93,6 +103,11 @@ a {
 .footer {
   padding: 18px 0 60px 0;
   background-color: #0C0C0E;
+}
+@media (max-width: 1404px) {
+  .footer {
+    padding: 18px 35px 60px 35px;
+  }
 }
 
 .footer__contact {
@@ -142,6 +157,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__inf {
@@ -155,6 +171,21 @@ a {
 
 .header__navigation {
   padding-left: 31%;
+}
+@media (max-width: 1465px) {
+  .header__navigation {
+    padding-left: 20%;
+  }
+}
+@media (max-width: 1404px) {
+  .header__navigation {
+    padding-left: 10%;
+  }
+}
+@media (max-width: 990px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .header__itemns {
@@ -229,6 +260,12 @@ a {
   gap: 0 25px;
   overflow: hidden;
 }
+@media (max-width: 990px) {
+  .about__slaiders {
+    width: 450px;
+    margin-left: 27%;
+  }
+}
 
 .about__paginations {
   display: flex;
@@ -252,6 +289,11 @@ a {
 
 .favorites {
   padding: 42px 0px 55px 0px;
+}
+@media (max-width: 990px) {
+  .favorites {
+    padding: 42px 30px 55px 30px;
+  }
 }
 
 .favorites__title {
@@ -334,6 +376,14 @@ input[type=radio]:checked::after {
   flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 220px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1404px) {
+  .favorites__books {
+    grid-template-columns: 510px;
+    justify-content: center;
+    gap: 80px 220px;
+  }
 }
 
 .book {
@@ -393,6 +443,24 @@ input[type=radio]:checked::after {
   margin-left: 24.2%;
   margin-top: -16.7%;
 }
+@media (max-width: 1161px) {
+  .book__img {
+    margin-left: 33%;
+    margin-top: -21%;
+  }
+}
+@media (max-width: 990px) {
+  .book__img {
+    margin-left: 40%;
+    margin-top: -25%;
+  }
+}
+@media (max-width: 990px) {
+  .book__img {
+    margin-left: 45%;
+    margin-top: -32%;
+  }
+}
 
 .book__btn {
   padding: 8px 25px;
@@ -409,6 +477,16 @@ input[type=radio]:checked::after {
 .shop {
   padding: 0 0 15px 0;
 }
+@media (max-width: 1161px) {
+  .shop {
+    padding: 0 20px 15px 20px;
+  }
+}
+@media (max-width: 990px) {
+  .shop {
+    padding: 0 40px 15px 40px;
+  }
+}
 
 .shop__title {
   letter-spacing: 1.3px;
@@ -424,11 +502,21 @@ input[type=radio]:checked::after {
   line-height: 4rem;
   text-align: center;
 }
+@media (max-width: 1404px) {
+  .shop__text {
+    padding: 40px 20px 0 20px;
+  }
+}
 
 .shop__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 1404px) {
+  .shop__menu {
+    flex-direction: column;
+  }
 }
 
 .menu__title {
@@ -449,6 +537,11 @@ input[type=radio]:checked::after {
 
 .menu__dessert {
   gap: 0 58px;
+}
+@media (max-width: 1161px) {
+  .menu__dessert {
+    justify-content: end;
+  }
 }
 
 .menu__desc__coffe {
@@ -491,6 +584,11 @@ input[type=radio]:checked::after {
 .contacts {
   padding: 0 0 50px 0;
 }
+@media (max-width: 1161px) {
+  .contacts {
+    padding: 0 40px 50px 40px;
+  }
+}
 
 .contact__title {
   letter-spacing: 1.3px;
@@ -501,6 +599,11 @@ input[type=radio]:checked::after {
   padding: 40px 0px 0px 0px;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 1404px) {
+  .contacts__desk {
+    flex-direction: column;
+  }
 }
 
 .contacts__text {
@@ -540,6 +643,11 @@ input[type=radio]:checked::after {
 .libraryCard {
   padding: 0 0 45px 0;
 }
+@media (max-width: 1404px) {
+  .libraryCard {
+    padding: 20 45px;
+  }
+}
 
 .libraryCard__title {
   letter-spacing: 1.8px;
@@ -550,6 +658,17 @@ input[type=radio]:checked::after {
   padding: 40px 0px 0px 0px;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 1404px) {
+  .libraryCard__cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1161px) {
+  .libraryCard__block {
+    margin: auto;
+  }
 }
 
 .libraryCard__form-title {
@@ -565,6 +684,11 @@ input[type=radio]:checked::after {
 .libraryCard__form {
   padding: 20px 20px 26px 20px;
   border: 3px solid #BB945F;
+}
+@media (max-width: 1161px) {
+  .libraryCard__form {
+    width: 600px;
+  }
 }
 
 .form {
@@ -616,6 +740,12 @@ input[type=radio]:checked::after {
 .libraryCard__account {
   text-align: right;
 }
+@media (max-width: 1161px) {
+  .libraryCard__account {
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+  }
+}
 
 .libraryCard__account-title {
   margin: 0 0 30px 0;
@@ -634,12 +764,24 @@ input[type=radio]:checked::after {
   line-height: 4rem;
   letter-spacing: 0.6px;
 }
+@media (max-width: 1161px) {
+  .libraryCard__text {
+    width: 600px;
+    margin: auto;
+  }
+}
 
 .libraryCard__buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 0 20px;
+}
+@media (max-width: 1161px) {
+  .libraryCard__buttons {
+    padding: 36px 0px 0px 0px;
+    justify-content: center;
+  }
 }
 
 .libraryCard__btn {
