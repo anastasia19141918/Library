@@ -2,23 +2,36 @@
   display: block;
   width: 24px;
   height: 24px;
+  @include media-mobile-samsungS8 {
+    width: 50px;
+    height: 50px;
+  }
   &__twitter {
     background-image: url('../../src/img/social-media/twitter.png');
     background-size: 24px 24px;
     background-repeat: no-repeat;
     align-items: center;
+    @include media-mobile-samsungS8 {
+       background-size: 50px 50px;
+     }
   }
   &__instagram {
     background-image: url('../../src/img/social-media/instagram.png');
     background-size: 24px 24px;
     background-repeat: no-repeat;
     align-items: center;
+    @include media-mobile-samsungS8 {
+      background-size: 50px 50px;
+    }
   }
   &__facebook{
     background-image: url('../../src/img/social-media/facebook.png');
     background-size: 24px 24px;
     background-repeat: no-repeat;
     align-items: center;
+    @include media-mobile-samsungS8 {
+      background-size: 50px 50px;
+    }
   }
 }
 

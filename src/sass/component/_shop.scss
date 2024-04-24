@@ -9,6 +9,10 @@
   @include media-tablet {
     padding: 0 0px 15px 0px;
   }
+  @include media-tablet-small {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .shop__title {
@@ -33,6 +37,30 @@
   @include media-tablet {
     width: 738px;
     margin: 0 0 40px -5px;
+  }
+  @include media-tablet-small {
+    width: 620px;
+    margin-left: 0;
+  }
+  @include media-mobile-big {
+    width: 550px;
+  }
+  @include media-mobile {
+    width: 430px;
+  }
+  @include media-mobile-big {
+    width: 370px;
+    text-align: left;
+  }
+  @include media-mobile-samsungA5 {
+    width: 300px;
+  }
+  @include media-mobile-samsungS8 {
+    width: 280px;
+    font-size: 2.5rem;
+  }
+  @include mobile-smail {
+    width: 260px;
   }
 }
 
@@ -70,10 +98,16 @@
   @include media-destop-small {
     justify-content: end;
   }
+  @include media-mobile-iphone  {
+    gap: 0 20px;
+  }
 }
 
 .menu__desc__coffe {
   gap: 0 50px;
+  @include media-mobile-iphone  {
+    gap: 0 10px;
+  }
 }
 
 .shop__dessert {
@@ -88,6 +122,9 @@
   line-height: 4.0rem;
   letter-spacing: 2px;
   color: $color-header-footer;
+  @include media-mobile-iphone  {
+    width: 130px;
+  }
 }
 
 .menu__line {
@@ -103,10 +140,16 @@
   font-size: 2.0rem;
   line-height: 4.0rem;
   letter-spacing: 2px;
+  @include media-mobile-iphone  {
+    align-self: center;
+  }
 }
 
 .menu__desc__dessert {
   text-align: right;
+  @include media-mobile-iphone  {
+    text-align: left;
+  }
 }
 
 

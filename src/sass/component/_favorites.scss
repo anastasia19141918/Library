@@ -19,6 +19,15 @@
   padding-top: 40px;
 }
 
+.favorites__button {
+  @include media-tablet-small {
+    display: flex;
+  }
+  @include media-mobile-samsungA5 {
+    justify-content: center;
+  }
+}
+
 .favorites__pick {
   margin: 0 0 40px 0;
   font-family: 'Inter', sans-serif;
@@ -27,6 +36,9 @@
   line-height: 2.4rem;
   @include media-tablet {
     letter-spacing: -0.3px;
+  }
+  @include media-mobile-samsungA5 {
+    text-align: center;
   }
 }
 
@@ -40,7 +52,18 @@
     margin-bottom: 40px;
     gap: 0 15.5%;
   }
+  @include media-tablet-small {
+    gap: 0 13%;
+  }
+  @include media-mobile-big {
+    flex-direction: column;
+    gap: 30px 0;
+  }
+  @include media-mobile-samsungA5 {
+    justify-content: center;
+  }
 }
+
 
 input[type='radio'],label {
  cursor: pointer;
@@ -112,12 +135,37 @@ input[type='radio']:checked::after {
     margin-right: 20px;
     gap: 40px 220px;
   }
+  @include media-mobile-big {
+    grid-template-columns: 480px;
+    margin: 0;
+  }
+  @include media-mobile-big {
+    grid-template-columns: 400px;
+  }
+  @include media-mobile-samsungA5 {
+    grid-template-columns:repeat(1, 1fr)
+  }
 }
 
 .book {
   width: 510px;
   padding: 17px 20px 13px 20px;
   border: 1px solid $color-black;
+  @include media-mobile-big {
+    width: 400px;
+  }
+  @include media-mobile-big {
+    width: 300px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 350px;
+  }
+  @include media-mobile-iphone  {
+    width: 290px;
+  }
+  @include media-mobile-samsungS8 {
+    width: 260px;
+  }
 }
 
 .book__title {
@@ -164,6 +212,15 @@ input[type='radio']:checked::after {
   font-size: 1.5rem;
   line-height: 4.0rem;
   letter-spacing: 2.2px;
+  @include media-mobile-iphone  {
+    width: 290px;
+    margin: 0 0 130px 0;
+  }
+  @include media-mobile-samsungS8 {
+    width: 260px;
+    margin: 0 0 260px 0;
+    font-size: 2.0rem;
+  }
 }
 
 .book__img {
@@ -186,6 +243,9 @@ input[type='radio']:checked::after {
     margin-left: 49.5%;
     margin-top: -34%;
   }
+  @include media-tablet-small {
+    display: none;
+  }
 }
 
 .book__btn {
@@ -198,6 +258,11 @@ input[type='radio']:checked::after {
   letter-spacing: 1px;
   background: transparent; 
   cursor: pointer;
+  @include media-mobile-iphone  {
+    padding: 18px 55px;
+    font-size: 2.0rem;
+    font-weight: 400;
+  }
 }
 
 //slaider book end

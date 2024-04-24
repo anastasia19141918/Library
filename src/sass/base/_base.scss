@@ -60,6 +60,9 @@ a {
   @include media-tablet {
     margin-left: 47.7%;
   }
+  @include mobile-smail {
+    display: none;
+  }
 }
 
 .text {

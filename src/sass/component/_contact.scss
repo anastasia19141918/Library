@@ -24,6 +24,9 @@
 
 .contacts__adress {
   margin-bottom: 63px;
+  @include media-mobile-big {
+    margin-bottom: 0px;
+  }
 }
 
 .contacts__text {
@@ -38,11 +41,45 @@
   }
 }
 
-
-
 .inquiries {
   font-weight: 700;
   color: $color-black;
+}
+
+.contacts__card {
+  @include media-tablet-small {
+    text-align: center;
+  }
+}
+
+.contacts__img {
+  @include media-tablet-small {
+    width: 600px;
+    height: 320px;
+  }
+  @include media-mobile-big {
+    width: 520px;
+    height: 300px;
+  }
+  @include media-mobile {
+    width: 450px;
+    height: 250px;
+  }
+  @include media-mobile-big {
+    width: 380px;
+    height: 250px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 350px;
+    height: 290px;
+  }
+  @include media-mobile-iphone  {
+    width: 300px;
+    height: 220px;
+  }
+  @include mobile-smail {
+    width: 280px;
+  }
 }
 
 //margin-top start

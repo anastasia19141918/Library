@@ -6,6 +6,9 @@
   @include media-tablet {
     padding: 0px 0px 40px 0px;
   }
+  @include media-mobile {
+    padding: 0 10px 20px 10px;
+  }
 }
 
 .libraryCard__title {
@@ -29,6 +32,9 @@
   @include media-tablet {
     margin: 0 0 0px 11%;
   }
+  @include media-tablet-small {
+    margin: auto;
+  }
 }
 
 .libraryCard__form-title {
@@ -43,6 +49,19 @@
   @include media-tablet {
     margin: 0 60px 30px 0px;
   }
+  @include media-mobile-big {
+    margin: 0 0px 30px 0px;
+  }
+  @include media-mobile-samsungA5 {
+    margin: 0 50px 30px 0px;
+  }
+  @include media-mobile-samsungS8 {
+    margin: 0 97px 30px 0px;
+  }
+  @include mobile-smail {
+    margin: 0 90px 30px -40px;
+    font-size: 2.5rem;
+  }
 }
 
 .libraryCard__form {
@@ -54,6 +73,16 @@
   @include media-tablet {
     width: 558px;
   }
+  @include media-mobile-big {
+    width: 490px;
+  }
+  @include media-mobile {
+    padding: 0;
+    border: none;
+  }
+  @include media-mobile {
+    width: 430px;
+  }
 }
 
 .form {
@@ -61,6 +90,23 @@
   margin-bottom: 20px;
   padding: 17px 17px 5px 17px;
   background-color: $color-form;
+  @include media-mobile-big {
+    width: 450px;
+  }
+  @include media-mobile {
+    width: 380px;
+    margin: auto;
+  }
+  @include media-mobile-samsungA5 {
+    width: 300px;
+    margin-left: 15px;
+  }
+  @include media-mobile-iphone  {
+    width: 270px;
+  }
+  @include mobile-smail {
+    width: 235px;
+  }
 }
 
 .form__title {
@@ -70,6 +116,9 @@
   font-size: 3.0rem;
   line-height: 5.0rem;
   letter-spacing: 0.7px;
+  @include media-mobile-iphone  {
+    text-align: center;
+  }
 }
 
 .input__text, .input__number {
@@ -83,10 +132,34 @@
   line-height: 5.0rem;
   letter-spacing: 0.7px;
   cursor: pointer;
+  @include media-mobile-big {
+    width: 400px;
+  }
+  @include media-mobile {
+    width: 300px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 250px;
+  }
+  @include mobile-smail {
+    width: 218px;
+  }
 }
 
 .libraryCard__butn {
   text-align: center;
+  @include media-mobile {
+    padding: 30px 0px 0px 0px;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 30px 40px 0px 0px;
+  }
+  @include media-mobile-iphone  {
+    padding: 30px 60px 0px 0px;
+  }
+  @include mobile-smail {
+    padding: 30px 140px 0px 0px;
+  }
 }
 
 .libraryCard__button {
@@ -124,6 +197,10 @@
   @include media-tablet {
     margin: 0 0px 37px 22px;
   }
+  @include mobile-smail {
+    margin: 0 0px 37px 0px;
+    font-size: 2.5rem;
+  }
 }
 
 .libraryCard__text {
@@ -140,6 +217,22 @@
   @include media-tablet {
     margin: 0 50px 5px;
   }
+  @include media-tablet-small {
+    margin: auto;
+  }
+  @include media-mobile-big {
+    width: 390px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 320px;
+  }
+  @include media-mobile-iphone  {
+    margin-left: -40px;
+  }
+  @include mobile-smail {
+    width: 280px;
+    margin-left: -50px;
+  }
 }
 
 .libraryCard__buttons {
@@ -154,6 +247,14 @@
   @include media-tablet {
     margin: 0 0 0 15px;
   }
+  @include media-mobile-samsungA5 {
+    margin-left: 25%;
+    flex-direction: column;
+    gap: 30px 0px;
+  }
+  @include media-mobile-iphone  {
+    margin-left: 15%;
+  }
 }
 
 .libraryCard__btn {
@@ -166,4 +267,9 @@
   letter-spacing: 1px;
   background-color: transparent;
   cursor: pointer;
+  @include media-mobile-samsungA5 {
+    width: 180px;
+    padding: 20px;
+    font-size: 2.0rem;
+  }
 }

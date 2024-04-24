@@ -29,4 +29,21 @@
   @include media-tablet {
     margin: 0 0 0 15.5%;
   }
+  @include media-mobile-big {
+    margin: auto;
+  }
+  @include media-mobile-samsungA5 {
+    font-size: 3.0rem;
+  }
+
+  @include media-mobile-iphone  {
+    width: 320px;
+    font-size: 3.0rem;
+  }
+
+  @include  mobile-smail {
+    margin-left: -22px;
+    font-size: 2.5rem;
+  }
+
 }

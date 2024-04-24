@@ -18,6 +18,51 @@
   @media(max-width: $media-tablet) {@content;}
 }
 
+@mixin media-tablet-small {
+  @media(max-width: $media-tablet-small) {@content;}
+}
+
+@mixin media-mobile-big {
+  @media(max-width: $media-mobile-big) {@content;}
+}
+
+@mixin media-mobile {
+  @media(max-width: $media-mobile) {@content;}
+}
+
+@mixin media-mobile-big {
+  @media(max-width: $media-mobile-big){ @content; }
+}
+
+@mixin media-mobile-samsungA5 {
+  @media(max-width: $media-mobile-samsungA5){ @content; }
+}
+
+@mixin media-mobile-iphone {
+  @media(max-width: $media-mobile-iphone){ @content; }
+}
+
+@mixin media-mobile-samsungS8 {
+  @media(max-width: $media-mobile-samsungS8){ @content; }
+}
+
+@mixin mobile-smail {
+  @media(max-width: $mobile-smail){ @content; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,8 @@
 .about {
   padding: 15px 0px 15px 0px;
+  @include media-mobile-samsungA5 {
+    padding: 15px;
+  }
 }
 
 .about__text {
@@ -11,6 +14,9 @@
   line-height: 4.0rem;
   @include media-tablet {
     padding: 40px 38px 20px;
+  }
+  @include  mobile-smail {
+    padding: 40px 10px 20px;
   }
 }
 
@@ -30,6 +36,21 @@
     margin-left: 21%;
     margin-bottom: 22px;
   }
+  @include media-mobile-big {
+    margin: auto;
+  }
+}
+
+.about__img {
+  @include media-mobile-samsungA5 {
+    width: 360px;
+  }
+  @include media-mobile-iphone  {
+    width: 320px;
+  }
+  @include  mobile-smail {
+    width: 280px;
+  }
 }
 
 //slaider end
@@ -45,6 +66,9 @@
   cursor: pointer;
   @include media-tablet {
     margin-left: 17px;
+  }
+  @include media-mobile-big {
+    padding: 20px 0px 0px 0px;
   }
 }
 
