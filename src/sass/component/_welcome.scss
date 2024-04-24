@@ -3,6 +3,9 @@
   background-image: url('../../src/img/welcome/Welcome.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  @include media-tablet {
+    padding: 31% 0 22%;
+  }
 }
 
 .welcome__desc {
@@ -23,4 +26,7 @@
   letter-spacing: 3.5px;
   text-transform: uppercase;
   overflow-wrap: break-word;
+  @include media-tablet {
+    margin: 0 0 0 15.5%;
+  }
 }

@@ -27,6 +27,7 @@
 //fonts end
 
 html {
+  overflow-x: hidden;
   font-size: 10px;
 }
 
@@ -46,6 +47,9 @@ a {
   font-weight: 400;
   color: #0C0C0E;
   letter-spacing: 0.9px;
+  @include media-tablet {
+    margin: 0 0 17px 2%;
+  }
 }
 
 .line {
@@ -53,6 +57,9 @@ a {
   height: 1px;
   margin: auto;
   background-color: #0C0C0E;
+  @include media-tablet {
+    margin-left: 47.7%;
+  }
 }
 
 .text {

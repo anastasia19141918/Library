@@ -23,6 +23,7 @@
   src: url("../../src/fonts/inter-v13-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 html {
+  overflow-x: hidden;
   font-size: 10px;
 }
 
@@ -43,12 +44,22 @@ a {
   color: #0C0C0E;
   letter-spacing: 0.9px;
 }
+@media (max-width: 768px) {
+  .title {
+    margin: 0 0 17px 2%;
+  }
+}
 
 .line {
   width: 5rem;
   height: 1px;
   margin: auto;
   background-color: #0C0C0E;
+}
+@media (max-width: 768px) {
+  .line {
+    margin-left: 47.7%;
+  }
 }
 
 .text {
@@ -67,6 +78,11 @@ a {
 @media (max-width: 990px) {
   .header {
     padding: 20px 35px 5px 35px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 20px 5px 20px;
   }
 }
 
@@ -107,6 +123,11 @@ a {
 @media (max-width: 1404px) {
   .footer {
     padding: 18px 35px 60px 35px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 18px 25px 60px 25px;
   }
 }
 
@@ -219,6 +240,11 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  .welcome {
+    padding: 31% 0 22%;
+  }
+}
 
 .welcome__desc {
   max-width: 600px;
@@ -239,6 +265,11 @@ a {
   text-transform: uppercase;
   overflow-wrap: break-word;
 }
+@media (max-width: 768px) {
+  .welcome__text {
+    margin: 0 0 0 15.5%;
+  }
+}
 
 .about {
   padding: 15px 0px 15px 0px;
@@ -251,6 +282,11 @@ a {
   font-weight: 400;
   font-size: 2rem;
   line-height: 4rem;
+}
+@media (max-width: 768px) {
+  .about__text {
+    padding: 40px 38px 20px;
+  }
 }
 
 .about__slaiders {
@@ -266,6 +302,12 @@ a {
     margin-left: 27%;
   }
 }
+@media (max-width: 768px) {
+  .about__slaiders {
+    margin-left: 21%;
+    margin-bottom: 22px;
+  }
+}
 
 .about__paginations {
   display: flex;
@@ -273,6 +315,11 @@ a {
   justify-content: center;
   gap: 0 10px;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .about__paginations {
+    margin-left: 17px;
+  }
 }
 
 .about__btn {
@@ -287,12 +334,31 @@ a {
   background-color: #BB945F;
 }
 
+.about__btn_media {
+  display: none;
+}
+@media (max-width: 768px) {
+  .about__btn_media {
+    display: block;
+  }
+}
+
 .favorites {
   padding: 42px 0px 55px 0px;
 }
 @media (max-width: 990px) {
   .favorites {
     padding: 42px 30px 55px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .favorites {
+    padding: 42px 23px 55px 23px;
+  }
+}
+@media (max-width: 768px) {
+  .favorites {
+    padding: 42px 23px 53px 23px;
   }
 }
 
@@ -311,6 +377,11 @@ a {
   font-size: 2rem;
   line-height: 2.4rem;
 }
+@media (max-width: 768px) {
+  .favorites__pick {
+    letter-spacing: -0.3px;
+  }
+}
 
 .favorites__btn {
   margin-bottom: 38px;
@@ -318,6 +389,12 @@ a {
   display: flex;
   flex-direction: row;
   gap: 0 7.9%;
+}
+@media (max-width: 768px) {
+  .favorites__btn {
+    margin-bottom: 40px;
+    gap: 0 15.5%;
+  }
 }
 
 input[type=radio], label {
@@ -383,6 +460,13 @@ input[type=radio]:checked::after {
     grid-template-columns: 510px;
     justify-content: center;
     gap: 80px 220px;
+  }
+}
+@media (max-width: 768px) {
+  .favorites__books {
+    grid-template-columns: 550px;
+    margin-right: 20px;
+    gap: 40px 220px;
   }
 }
 
@@ -461,6 +545,12 @@ input[type=radio]:checked::after {
     margin-top: -32%;
   }
 }
+@media (max-width: 768px) {
+  .book__img {
+    margin-left: 49.5%;
+    margin-top: -34%;
+  }
+}
 
 .book__btn {
   padding: 8px 25px;
@@ -487,9 +577,19 @@ input[type=radio]:checked::after {
     padding: 0 40px 15px 40px;
   }
 }
+@media (max-width: 768px) {
+  .shop {
+    padding: 0 0px 15px 0px;
+  }
+}
 
 .shop__title {
   letter-spacing: 1.3px;
+}
+@media (max-width: 768px) {
+  .shop__title {
+    letter-spacing: 1.8px;
+  }
 }
 
 .shop__text {
@@ -507,6 +607,12 @@ input[type=radio]:checked::after {
     padding: 40px 20px 0 20px;
   }
 }
+@media (max-width: 768px) {
+  .shop__text {
+    width: 738px;
+    margin: 0 0 40px -5px;
+  }
+}
 
 .shop__menu {
   display: flex;
@@ -517,6 +623,10 @@ input[type=radio]:checked::after {
   .shop__menu {
     flex-direction: column;
   }
+}
+
+.shop__drink {
+  padding-left: 20px;
 }
 
 .menu__title {
@@ -589,6 +699,11 @@ input[type=radio]:checked::after {
     padding: 0 40px 50px 40px;
   }
 }
+@media (max-width: 768px) {
+  .contacts {
+    padding: 0 20px 51px 20px;
+  }
+}
 
 .contact__title {
   letter-spacing: 1.3px;
@@ -606,6 +721,10 @@ input[type=radio]:checked::after {
   }
 }
 
+.contacts__adress {
+  margin-bottom: 63px;
+}
+
 .contacts__text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -613,6 +732,11 @@ input[type=radio]:checked::after {
   line-height: 4rem;
   letter-spacing: 2.5px;
   word-spacing: -1.6px;
+}
+@media (max-width: 768px) {
+  .contacts__text {
+    letter-spacing: 2.2px;
+  }
 }
 
 .inquiries {
@@ -645,7 +769,12 @@ input[type=radio]:checked::after {
 }
 @media (max-width: 1404px) {
   .libraryCard {
-    padding: 20 45px;
+    padding: 20px 45px;
+  }
+}
+@media (max-width: 768px) {
+  .libraryCard {
+    padding: 0px 0px 40px 0px;
   }
 }
 
@@ -670,6 +799,11 @@ input[type=radio]:checked::after {
     margin: auto;
   }
 }
+@media (max-width: 768px) {
+  .libraryCard__block {
+    margin: 0 0 0px 11%;
+  }
+}
 
 .libraryCard__form-title {
   margin: 0 0 30px 0;
@@ -680,6 +814,11 @@ input[type=radio]:checked::after {
   letter-spacing: 0.6px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .libraryCard__form-title {
+    margin: 0 60px 30px 0px;
+  }
+}
 
 .libraryCard__form {
   padding: 20px 20px 26px 20px;
@@ -688,6 +827,11 @@ input[type=radio]:checked::after {
 @media (max-width: 1161px) {
   .libraryCard__form {
     width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .libraryCard__form {
+    width: 558px;
   }
 }
 
@@ -746,6 +890,11 @@ input[type=radio]:checked::after {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .libraryCard__account {
+    padding: 23px 40px 0px 40px;
+  }
+}
 
 .libraryCard__account-title {
   margin: 0 0 30px 0;
@@ -754,6 +903,11 @@ input[type=radio]:checked::after {
   font-size: 3rem;
   line-height: 36px;
   letter-spacing: -1.6px;
+}
+@media (max-width: 768px) {
+  .libraryCard__account-title {
+    margin: 0 0px 37px 22px;
+  }
 }
 
 .libraryCard__text {
@@ -770,6 +924,11 @@ input[type=radio]:checked::after {
     margin: auto;
   }
 }
+@media (max-width: 768px) {
+  .libraryCard__text {
+    margin: 0 50px 5px;
+  }
+}
 
 .libraryCard__buttons {
   display: flex;
@@ -781,6 +940,11 @@ input[type=radio]:checked::after {
   .libraryCard__buttons {
     padding: 36px 0px 0px 0px;
     justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .libraryCard__buttons {
+    margin: 0 0 0 15px;
   }
 }
 

@@ -4,7 +4,9 @@
   @include media-destop  {
     padding: 18px 35px 60px 35px;
   }
-  
+  @include media-tablet {
+    padding: 18px 25px 60px 25px;
+  }
 }
 
 .footer__contact {

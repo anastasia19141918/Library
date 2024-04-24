@@ -6,10 +6,16 @@
   @include media-tablet-big {
     padding: 0 40px 15px 40px;
   }
+  @include media-tablet {
+    padding: 0 0px 15px 0px;
+  }
 }
 
 .shop__title {
   letter-spacing: 1.3px;
+  @include media-tablet {
+    letter-spacing: 1.8px;
+  }
 }
 
 .shop__text {
@@ -24,6 +30,10 @@
   @include media-destop  {
     padding: 40px 20px 0 20px;
   }
+  @include media-tablet {
+    width: 738px;
+    margin: 0 0 40px -5px;
+  }
 }
 
 .shop__menu {
@@ -33,6 +43,10 @@
   @include media-destop  {
     flex-direction: column;
   }
+}
+
+.shop__drink {
+  padding-left: 20px;
 }
 
 .menu__title {

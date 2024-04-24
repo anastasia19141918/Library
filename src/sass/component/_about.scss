@@ -9,6 +9,9 @@
   font-weight: 400;
   font-size: 2.0rem;
   line-height: 4.0rem;
+  @include media-tablet {
+    padding: 40px 38px 20px;
+  }
 }
 
 //slaider start
@@ -23,6 +26,10 @@
     width: 450px;
     margin-left: 27%;
   }
+  @include media-tablet {
+    margin-left: 21%;
+    margin-bottom: 22px;
+  }
 }
 
 //slaider end
@@ -36,6 +43,9 @@
   justify-content: center;
   gap: 0 10px;
   cursor: pointer;
+  @include media-tablet {
+    margin-left: 17px;
+  }
 }
 
 
@@ -49,6 +59,13 @@
 
 .about__activ {
   background-color: $color-form;
+}
+
+.about__btn_media {
+  display: none;
+  @include media-tablet {
+    display: block;
+  }
 }
 
 //slaber pagination end

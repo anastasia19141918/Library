@@ -14,7 +14,9 @@
   @media(max-width: $media-tablet-big) {@content;}
 }
 
-
+@mixin media-tablet {
+  @media(max-width: $media-tablet) {@content;}
+}
 
 
 

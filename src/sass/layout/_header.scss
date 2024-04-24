@@ -7,6 +7,9 @@
   @include media-tablet-big {
     padding: 20px 35px 5px 35px;
   }
+  @include media-tablet {
+    padding: 20px 20px 5px 20px;
+  }
 }
 
 .header__wrapper {
