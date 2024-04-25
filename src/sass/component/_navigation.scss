@@ -58,6 +58,7 @@
 .header__itemn {
   margin-right: 34px;
   cursor: pointer;
+
 }  
 
 .header__itemn:last-child {
@@ -70,7 +71,15 @@
   font-size: 2.0rem;
   line-height: 5.0rem;
   color: $color-block-title;
+  transition: all .3s ease-in-out;
   @include media-tablet-big {
     font-size: 2.5rem;
+  }
+}
+
+.header__link:hover {
+  color: $color-form;
+  @include media-tablet {
+    color: $color-block-title;
   }
 }
