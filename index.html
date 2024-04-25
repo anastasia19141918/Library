@@ -11,8 +11,8 @@
   <header class="header">
     <div class="wrapper header__wrapper">
       <h1 class="header__title">Brooklyn Public Library</h1>
-      <nav class="header__navigation">
-        <ul class="header__itemns">
+      <nav class="header__navigation" id="header__navigation">
+        <ul class="header__itemns" id="header__itemns">
 
           <li class="header__itemn">
               <a href="#!" class="header__link">About</a>
@@ -32,6 +32,11 @@
         </ul>
       </nav>
       <div class="header__icon"></div>
+      <div class="burger" id="burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+      </div>
     </div>
   </header>
   <main>
@@ -394,5 +399,6 @@
       </div>
     </div>
   </footer>
+  <script src="./src/js/burger-menu.js"></script>
 </body>
 </html>
