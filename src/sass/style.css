@@ -125,6 +125,7 @@ a {
 }
 
 .header__icon {
+  position: relative;
   width: 28px;
   height: 28px;
   background-image: url("../../src/img/header/icon_profile.svg");
@@ -1724,6 +1725,82 @@ input[type=radio]:checked::after {
   .icon:hover {
     transform: scale(1);
   }
+}
+
+.log {
+  display: none;
+  position: absolute;
+  margin-left: 87%;
+  margin-top: 50px;
+  width: 120px;
+  background-color: #FFFFFF;
+}
+@media (max-width: 1161px) {
+  .log {
+    margin-left: 80%;
+  }
+}
+@media (max-width: 990px) {
+  .log {
+    margin-left: 65%;
+  }
+}
+@media (max-width: 477px) {
+  .log {
+    margin-left: 60%;
+  }
+}
+@media (max-width: 375px) {
+  .log {
+    margin-left: 50%;
+  }
+}
+@media (max-width: 321px) {
+  .log {
+    margin-left: 45%;
+  }
+}
+
+.login__title, .login-register__title {
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.login__line {
+  width: 40px;
+  height: 1px;
+  margin: auto;
+  background-color: #BB945F;
+}
+
+.login__profile {
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.login__log {
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.login__profile:hover, .login__log:hover {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
