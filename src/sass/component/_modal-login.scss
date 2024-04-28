@@ -1,0 +1,262 @@
+//moadal start
+.modal {
+  position: fixed;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s all;
+  pointer-events: none;
+}
+
+.modal__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.modal__body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  left: 40%;
+  width: 250px;
+  padding: 15px 30px;
+  background-color: $color-block-title;
+  @include media-tablet-small {
+    top: 30%;
+    left: 25%;
+  }
+  @include media-mobile-big {
+    top: 30%;
+    left: 15%;
+  }
+  @include media-mobile-samsungA5 {
+    left: 8%;
+  }
+  @include media-mobile-samsungS8 {
+    width: 220px;
+    left: 3%;
+  }
+  @include mobile-smail {
+    width: 210px;
+    left: 2%;
+  }
+}
+
+.modal__title {
+  position: relative;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.modal_closed {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 80%;
+  background-image: url('../../src/img/modal/close_btn.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.modal__email, .modal__password{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.input-password, .input-email {
+  border: 1px solid $color-form;
+}
+
+.modal__btn {
+  width: 75px;
+  padding: 8px 8px;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal__account {
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  color: $color-black;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal__link {
+  font-family: 'Inter', sans-serif;
+  color: $color-black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+//moadal end
+
+//modal register start
+
+//moadal start
+
+.modal-register {
+  position: fixed;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s all;
+  pointer-events: none;
+}
+
+.modal-register__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.modal-register__body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  left: 40%;
+  width: 250px;
+  padding: 15px 30px;
+  background-color: $color-block-title;
+  @include media-tablet-small {
+    top: 30%;
+    left: 25%;
+  }
+  @include media-mobile-big {
+    top: 30%;
+    left: 15%;
+  }
+  @include media-mobile-samsungA5 {
+    left: 8%;
+  }
+  @include media-mobile-samsungS8 {
+    width: 220px;
+    left: 3%;
+  }
+  @include mobile-smail {
+    width: 210px;
+    left: 2%;
+  }
+}
+
+.modal-register__title {
+  position: relative;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.modal-register_closed {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 80%;
+  background-image: url('../../src/img/modal/close_btn.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.modal-register__email, .modal-register__password,.modal-register_first-name,.modal-register_last-name{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.input-register-password, .input-register_email, .input-register_name {
+  border: 1px solid $color-form;
+}
+
+.modal-register__btn {
+  width: 75px;
+  padding: 8px 8px;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-register__account {
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  color: $color-black;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-register__link {
+  font-family: 'Inter', sans-serif;
+  color: $color-black;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+//moadal end
+
+//modal register end
