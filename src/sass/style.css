@@ -1731,12 +1731,14 @@ input[type=radio]:checked::after {
 }
 
 .log {
-  display: none;
   position: absolute;
   margin-left: 87%;
   margin-top: 50px;
   width: 120px;
   background-color: #FFFFFF;
+  opacity: 0;
+  transition: 0.5s all;
+  pointer-events: none;
 }
 @media (max-width: 1161px) {
   .log {
@@ -1762,6 +1764,12 @@ input[type=radio]:checked::after {
   .log {
     margin-left: 45%;
   }
+}
+
+.login__active, .login_active__register {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
 }
 
 .login__title, .login-register__title {

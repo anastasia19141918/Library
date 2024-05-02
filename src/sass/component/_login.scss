@@ -1,10 +1,14 @@
 .log {
-  display: none;
   position: absolute;
   margin-left: 87%;
   margin-top: 50px;
   width: 120px;
   background-color: $color-block-title;
+
+  opacity: 0;
+  transition: 0.5s all;
+  pointer-events: none;
+  
   @include media-destop-small {
     margin-left: 80%;
   }
@@ -22,6 +26,12 @@
   @include mobile-smail {
     margin-left: 45%;
   }
+}
+
+.login__active, .login_active__register {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
 }
 
 .login__title, .login-register__title {

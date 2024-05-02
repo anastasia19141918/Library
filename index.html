@@ -30,7 +30,7 @@
 
         </ul>
       </nav>
-      <div class="header__icon"></div>
+      <div class="header__icon" id="header__icon"></div>
 
       <div class="burger" id="burger">
         <span class="burger__line burger__line_first"></span>
@@ -40,18 +40,18 @@
 
       <!--login start-->
 
-      <div class="log login">
+      <div class="log login" id="log_login">
         <div class="login__title">Profile</div>
         <div class="login__line"></div>
         <div class="login__profile">My profile</div>
         <div class="login__log">Log Out</div>
       </div>
 
-      <div class="log login-register">
+      <div class="log login-register" id="log_register">
         <div class="login-register__title">Profile</div>
         <div class="login__line"></div>
         <div class="login__profile">Log In</div>
-        <div class="login__log">Register</div>
+        <div class="login__log" id="register">Register</div>
       </div>
 
       <!--login end-->
@@ -466,7 +466,7 @@
               You will be able to see a reader card after logging into account or you can register a new account
             </p>
             <div class="libraryCard__buttons">
-              <button class="libraryCard__btn">Sign Up</button>
+              <button class="libraryCard__btn" id="register_libraryCard">Sign Up</button>
               <button class="libraryCard__btn">Log in</button>
             </div>
           </div>
@@ -484,10 +484,10 @@
           </div>
 
           <!--modal start-->
-          <div class="modal">
-            <div class="modal__body">
+          <div class="modal" id="modal">
+            <div class="modal__body" id="modal__body">
               <h4 class="modal__title">Login</h4>
-              <div class="modal_closed"></div>
+              <div class="modal_closed" id="modal_closed"></div>
               <label class="modal__email">
                 E-mail or readers card
                 <input type="email" class="input-email">
@@ -504,25 +504,25 @@
             </div>
           </div>
 
-          <div class="modal-register">
-            <div class="modal-register__body">
+          <div class="modal-register" id="modal-register">
+            <div class="modal-register__body" id="modal-register__body">
               <h4 class="modal-register__title">Login</h4>
-              <div class="modal-register_closed"></div>
+              <div class="modal-register_closed" id="modal-register_closed"></div>
               <label class="modal-register_first-name">
                 First name
-                <input type="text" class="input-register_name">
+                <input type="text" class="input-register_name" required>
               </label>
               <label class="modal-register_last-name">
                 Last name
-                <input type="text" class="input-register_name">
+                <input type="text" class="input-register_name" required>
               </label>
               <label class="modal-register__email">
                 E-mail or readers card
-                <input type="email" class="input-register_email">
+                <input type="email" class="input-register_email" required>
               </label>
               <label class="modal-register__password">
                 Password
-                <input type="password" class="input-register-password">
+                <input type="password" class="input-register-password" required>
               </label>
               <button class="modal-register__btn">Log In</button>
               <div class="modal-register__account">
@@ -625,5 +625,7 @@
     </div>
   </footer>
   <script src="./src/js/burger-menu.js"></script>
+  <script src="./src/js/registr-icon.js"></script>
+  <script src="./src/js/register.js"></script>
 </body>
 </html>
