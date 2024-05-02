@@ -400,6 +400,7 @@
           Digital Library Cards
         </h3>
         <div class="line"></div>
+
         <div class="libraryCard__cards">
 
           <div class="libraryCard__block">
@@ -419,6 +420,45 @@
               </div>
             </div>
           </div>
+          <!--active start-->
+          <div class="activeCard__block">
+            <h4 class="activeCard__form-title">Your Library card</h4>
+            <div class="activeCard__form">
+              <form class="formActive">
+                <div class="formActive__title">Brooklyn Public Library</div>
+                <label class="formActive__text">
+                  <input type="text" class="inputformActive__text" placeholder="Reader's name">
+                </label>
+                <label class="form__number">
+                  <input type="number" class="inputformActive__number" placeholder="Card number">
+                </label>
+              </form>
+              <div class="formActive__butn">
+                <div class="modal-profile__info formActive__profile__info">
+      
+                  <div class="profile">
+                    <h4 class="profile__title">Visits</h4>
+                    <span class="profile__icon profile__icon__visits"></span>
+                    <div class="profile__count">0</div>
+                  </div>
+      
+                  <div class="profile">
+                    <h4 class="profile__title">Bonuses</h4>
+                    <span class="profile__icon profile__icon__bonuses"></span>
+                    <div class="profile__count">0</div>
+                  </div>
+      
+                  <div class="profile">
+                    <h4 class="profile__title">Books</h4>
+                    <span class="profile__icon profile__icon__books"></span>
+                    <div class="profile__count">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--active end-->
 
           <div class="libraryCard__account">
             <h4 class="libraryCard__account-title">Get a reader card</h4>
@@ -428,6 +468,18 @@
             <div class="libraryCard__buttons">
               <button class="libraryCard__btn">Sign Up</button>
               <button class="libraryCard__btn">Log in</button>
+            </div>
+          </div>
+
+          <div class="formActive__account">
+            <h4 class="formActive__account-title">Visit your profile</h4>
+            <p class="formActive__text">
+              With a digital library card you get free access to the Library’s wide 
+              array of digital resources including e-books, databases, 
+              educational resources, and more
+            </p>
+            <div class="formActive__buttons">
+             <button class="formActive__btn">Profile</button>
             </div>
           </div>
 
@@ -512,7 +564,6 @@
                     <span class="profile__icon profile__icon__books"></span>
                     <div class="profile__count">0</div>
                   </div>
-
                 </div>
 
                 <div class="modal-profile__rented">
@@ -534,7 +585,10 @@
          <!--modal my profile end-->
         </div>
       </div>
+      
     </section>
+   
+
   </main>
   <footer class="footer">
     <div class="wrapper">

@@ -50,6 +50,24 @@
   @media(max-width: $mobile-smail){ @content; }
 }
 
+//active
+
+//$media-tablet-big-active
+
+@mixin media-tablet-big-active {
+  @media(max-width:$media-tablet-big-active){ @content; }
+}
+
+@mixin media-tablet-active {
+  @media(max-width:$media-tablet-active){ @content; }
+}
+
+@mixin media-mobile-big-active {
+  @media(max-width:$media-mobile-big-active){ @content; }
+}
+
+//
+
 
 
 

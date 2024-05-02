@@ -4,10 +4,10 @@
   top: 0;
   left: 0;
   position: fixed;
-  //opacity: 0;
+  opacity: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: .5 all;
-  //pointer-events: none;
+  pointer-events: none;
 }
 
 .modal-profile__active {

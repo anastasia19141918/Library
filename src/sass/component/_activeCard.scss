@@ -1,50 +1,36 @@
-.libraryCard {
-  padding: 0 0 85px 0;
-  @include media-destop  {
-    padding: 20px 45px 70px;
-  }
-  @include media-tablet {
-    padding: 0px 0px 40px 0px;
-  }
-  @include media-mobile {
-    padding: 0 10px 20px 10px;
-  }
-}
-
-.libraryCard__title {
-  letter-spacing: 1.8px;
-}
-
-.libraryCard__cards {
-  position: relative;
-  display: flex;
-  padding: 40px 0px 0px 0px;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @include media-destop  {
-    flex-direction: column;
-    gap: 60px 0;
-  }
-}
-
-.libraryCard__block {
-  //pointer-events: none;
-  //opacity: 0;
+.activeCard__block {             
+  position: absolute;
+  transition: .5 all;
+  pointer-events: none;
+  opacity: 0;
   @include media-destop-small {
-    margin: auto;
+    margin: 0px 0px 0px 20%;
   }
   @include media-tablet {
     margin: 0 0 0px 11%;
   }
+  @include media-tablet-active {
+    margin: 0 0 0px 5%;
+  }
+
+  @include media-tablet-big {
+    margin: 0px 0px 10px 13%;
+  }
+
   @include media-tablet-small {
-    margin: auto;
+    margin: 0 0 0px 2%;
   }
 }
 
-.libraryCard__form-title {
+.activeCard__block__active,
+.formActive__account__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.activeCard__form-title {
   margin: 0 0 30px 0;
-  
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 3.0rem;
@@ -69,8 +55,8 @@
   }
 }
 
-.libraryCard__form {
-  padding: 20px 20px 26px 20px;
+.activeCard__form {
+  padding: 20px 20px 5px 20px;
   border: 3px solid $color-form;
   @include media-destop-small {
     width: 600px;
@@ -78,8 +64,16 @@
   @include media-tablet {
     width: 558px;
   }
+
+  @include media-tablet-active {
+    width: 558px;
+  }
+
   @include media-mobile-big {
     width: 490px;
+  }
+  @include media-tablet-small {
+    width: 450px;
   }
   @include media-mobile {
     padding: 0;
@@ -90,17 +84,20 @@
   }
 }
 
-.form {
+.formActive {
   width: 524px;
   margin-bottom: 20px;
   padding: 17px 17px 5px 17px;
   background-color: $color-form;
+  @include media-tablet-small {
+    width: 420px;
+  }
   @include media-mobile-big {
     width: 450px;
   }
   @include media-mobile {
-    width: 380px;
-    margin: auto;
+    width: 350px;
+    
   }
   @include media-mobile-samsungA5 {
     width: 300px;
@@ -111,10 +108,10 @@
   }
   @include mobile-smail {
     width: 235px;
-  }
+}
 }
 
-.form__title {
+.formActive__title {
   margin-bottom: 20px;
   font-family: 'Forum', sans-serif;
   font-weight: 400;
@@ -126,7 +123,7 @@
   }
 }
 
-.input__text, .input__number {
+.inputformActive__text, .inputformActive__number {
   width: 500px;
   padding: 10px 0px 5px 20px;
   margin-bottom: 21px;
@@ -137,11 +134,14 @@
   line-height: 5.0rem;
   letter-spacing: 0.7px;
   cursor: pointer;
+  @include media-tablet-small {
+    width: 400px;
+  }
   @include media-mobile-big {
     width: 400px;
   }
   @include media-mobile {
-    width: 300px;
+    width: 320px;
   }
   @include media-mobile-samsungA5 {
     width: 250px;
@@ -151,7 +151,7 @@
   }
 }
 
-.libraryCard__butn {
+.formActive__butn {
   text-align: center;
   @include media-mobile {
     padding: 30px 0px 0px 0px;
@@ -167,44 +167,64 @@
   }
 }
 
-.libraryCard__button {
-  width: 242px;
-  padding: 8px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 2.0rem;
-  line-height: 2.4rem;
-  letter-spacing: 1px;
-  text-align: center;
-  background: transparent;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
+.formActive__profile__info {
+  justify-content: center;
 }
 
-.libraryCard__button:hover {
-  background-color: $color-form;
-  border: 1px solid $color-form;
-  @include media-tablet {
-    background-color: transparent;
-    border: 1px solid $color-black;
-  }
-}
-
-.libraryCard__account {
-  //pointer-events: none;
-  //opacity: 0;
-  position: relative;
+.formActive__account {
+  margin-left: 66.6%;
+  position: absolute;
   text-align: right;
+  transition: .5 all;
+  pointer-events: none;
+  opacity: 0;
+  @include media-destop {
+    margin-left: 55%;
+  }
   @include media-destop-small {
-    padding: 30px 0px 0px 0px;
+    padding: 52% 0px 0px 0px;
+    margin-left: 20%;
     text-align: center;
   }
+  @include media-tablet-big {
+    padding: 63% 0px 0px 0px;
+    margin-left: 17%;
+  }
+
+  @include media-tablet-big-active {
+    padding: 67% 0px 0px 0px;
+  }
+
+  @include media-tablet-active {
+    padding: 67% 0px 0px 0px;
+  }
+
   @include media-tablet {
-    padding: 23px 40px 0px 40px;
+    padding: 75% 0px 0px 0px;
+    margin-left: 8%;
+}
+  @include media-tablet-small {
+    padding: 94% 0px 0px 0px;
+    margin-left: 12%;
+  }
+  @include media-mobile-big {
+    padding: 120% 0px 0px 0px;
+    }
+  @include media-mobile {
+    padding: 102% 0px 0px 0px;
+    margin-left: 0%;
+  }
+@include media-mobile-big-active {
+   padding: 115% 0px 0px 0px;
+    margin-left: 0%;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 220% 0px 0px 0px;
+    margin-left: 10%;
   }
 }
 
-.libraryCard__account-title {
+.formActive__account-title {
   margin: 0 0 30px 0;
   
   font-family: 'Inter', sans-serif;
@@ -213,7 +233,7 @@
   line-height: 36px;
   letter-spacing: -1.6px;
   @include media-tablet {
-    margin: 0 0px 37px 22px;
+    margin: 0 0px 10px 22px;
   }
   @include mobile-smail {
     margin: 0 0px 37px 0px;
@@ -221,7 +241,7 @@
   }
 }
 
-.libraryCard__text {
+.formActive__text {
   width: 470px;
   margin: 0 0 36px 0;
   font-family: 'Inter', sans-serif;
@@ -236,6 +256,7 @@
     margin: 0 50px 5px;
   }
   @include media-tablet-small {
+    width: 490px;
     margin: auto;
   }
   @include media-mobile-big {
@@ -251,9 +272,19 @@
     width: 280px;
     margin-left: -50px;
   }
+  @include media-mobile {
+    width: 420px;
+    font-size: 1.7rem;
+  }
+  @include media-mobile-big-active {
+    width: 400px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 320px;
+  }
 }
 
-.libraryCard__buttons {
+.formActive__buttons {
   display: flex;
   flex-direction: row;
   justify-content:flex-end;
@@ -273,9 +304,12 @@
   @include media-mobile-iphone  {
     margin-left: 15%;
   }
+ @include media-tablet-small {
+    padding: 5px 0px 0px 0px;
+  }
 }
 
-.libraryCard__btn {
+.formActive__btn {
   width: 75px;
   padding: 8px;
   font-family: 'Inter', sans-serif;
@@ -293,7 +327,7 @@
   }
 }
 
-.libraryCard__btn:hover {
+.formActive__btn:hover {
   background-color: $color-form;
   border: 1px solid $color-form;
   @include media-tablet {
@@ -301,4 +335,3 @@
     border: 1px solid $color-black;
   }
 }
-
