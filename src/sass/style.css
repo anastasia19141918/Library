@@ -677,10 +677,11 @@ a {
 
 .favorites__btn {
   margin-bottom: 38px;
+  margin-top: -10px;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
-  gap: 0 7.9%;
+  gap: 0 10%;
 }
 @media (max-width: 768px) {
   .favorites__btn {
@@ -712,7 +713,6 @@ input[type=radio], label {
 input[type=radio] {
   position: relative;
   width: 17px;
-  height: 17px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -722,7 +722,8 @@ input[type=radio] {
 input[type=radio]::before {
   content: "";
   position: absolute;
-  margin-left: -9px;
+  margin-left: -13px;
+  margin-top: 13px;
   top: 74%;
   width: 14px;
   height: 14px;
@@ -735,7 +736,8 @@ input[type=radio]::before {
 input[type=radio]:checked::after {
   content: "";
   position: absolute;
-  margin-left: -9px;
+  margin-left: -13px;
+  margin-top: 13px;
   top: 74%;
   width: 7px;
   height: 7px;
@@ -754,16 +756,22 @@ input[type=radio]:checked::after {
 }
 
 .input__label:hover {
-  color: #BB945F;
+  font-weight: 700;
+  transition: 0.4s ease-in-out;
 }
 @media (max-width: 768px) {
   .input__label:hover {
-    color: #000000;
+    font-weight: 400;
   }
+}
+
+.favorites__button {
+  width: 62px;
 }
 
 .favorites__button__active {
   font-weight: 700;
+  transition: 0.4s all font-weight;
 }
 
 .favorites__books {
