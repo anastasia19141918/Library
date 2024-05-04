@@ -752,7 +752,6 @@ input[type=radio]:checked::after {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.4rem;
-  transition: all 0.3s ease-in-out;
 }
 
 .input__label:hover {
@@ -812,10 +811,20 @@ input[type=radio]:checked::after {
   }
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .book {
   width: 510px;
   padding: 17px 20px 13px 20px;
   border: 1px solid #000000;
+  animation: show 0.5s ease-in-out;
+  animation-timing-function: linear;
 }
 @media (max-width: 477px) {
   .book {
