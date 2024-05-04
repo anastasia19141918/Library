@@ -608,6 +608,7 @@ a {
 
 .about__activ {
   background-color: #BB945F;
+  cursor: default;
 }
 
 .about__btn_media {
@@ -814,6 +815,9 @@ input[type=radio]:checked::after {
 @keyframes show {
   from {
     opacity: 0;
+    box-shadow: -1px 0px 5px 9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 0px 5px 9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 0px 5px 9px rgba(0, 0, 0, 0.75);
   }
   to {
     opacity: 1;
@@ -823,7 +827,7 @@ input[type=radio]:checked::after {
   width: 510px;
   padding: 17px 20px 13px 20px;
   border: 1px solid #000000;
-  animation: show 0.5s ease-in-out;
+  animation: show 0.7s ease-in-out;
   animation-timing-function: linear;
 }
 @media (max-width: 477px) {
