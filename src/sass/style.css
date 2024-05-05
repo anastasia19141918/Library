@@ -540,11 +540,13 @@ a {
 }
 
 .about__slaiders {
+  position: relative;
   margin-bottom: 37px;
   display: flex;
   flex-direction: row;
   gap: 0 25px;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 @media (max-width: 990px) {
   .about__slaiders {
@@ -617,6 +619,89 @@ a {
 @media (max-width: 768px) {
   .about__btn_media {
     display: block;
+  }
+}
+
+.prev-button, .nex-button {
+  display: none;
+  position: absolute;
+}
+@media (max-width: 981px) {
+  .prev-button, .nex-button {
+    display: block;
+    top: 135%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .prev-button, .nex-button {
+    top: 189%;
+    font-size: 24px;
+  }
+}
+@media (max-width: 690px) {
+  .prev-button, .nex-button {
+    top: 175%;
+  }
+}
+@media (max-width: 412px) {
+  .prev-button, .nex-button {
+    top: 165%;
+    color: white;
+    font-weight: 500;
+  }
+}
+@media (max-width: 360px) {
+  .prev-button, .nex-button {
+    top: 150%;
+  }
+}
+@media (max-width: 321px) {
+  .prev-button, .nex-button {
+    top: 148%;
+  }
+}
+
+@media (max-width: 768px) {
+  .prev {
+    left: 9%;
+  }
+}
+@media (max-width: 412px) {
+  .prev {
+    left: 4%;
+  }
+}
+
+@media (max-width: 981px) {
+  .nex {
+    left: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .nex {
+    left: 87%;
+  }
+}
+@media (max-width: 690px) {
+  .nex {
+    left: 89%;
+  }
+}
+@media (max-width: 412px) {
+  .nex {
+    left: 87%;
+  }
+}
+@media (max-width: 321px) {
+  .nex {
+    left: 80%;
   }
 }
 

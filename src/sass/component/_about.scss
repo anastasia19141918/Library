@@ -23,11 +23,15 @@
 //slaider start
 
 .about__slaiders {
+  position: relative;
   margin-bottom: 37px;
   display: flex;
   flex-direction: row;
   gap: 0 25px;
+
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+
   @include media-tablet-big {
     width: 450px;
     margin-left: 27%;
@@ -94,3 +98,65 @@
 }
 
 //slaber pagination end
+
+.prev-button,.nex-button {
+  display: none;
+  position: absolute;
+  @include media-tablets {
+    display: block;
+    top: 135%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+  }
+  @include media-tablet {
+    top: 189%;
+    font-size: 24px;
+  }
+  @include media-tablet-small {
+    top: 175%;
+  }
+  @include  media-mobile-samsungA5 {
+    top: 165%;
+    color: white;
+    font-weight: 500;
+  }
+  @include media-mobile-samsungS8 {
+    top: 150%;
+  }
+  @include mobile-smail {
+    top: 148%;
+  }
+}
+
+.prev {
+  @include media-tablet {
+    left: 9%;
+  }
+  @include  media-mobile-samsungA5 {
+    left: 4%;
+  }
+}
+
+.nex {
+   @include media-tablets {
+    left: 90%;
+  }
+  @include media-tablet {
+    left: 87%;
+  }
+  @include media-tablet-small {
+    left: 89%;
+  }
+  @include  media-mobile-samsungA5 {
+    left: 87%;
+  }
+  @include mobile-smail {
+    left: 80%;
+  }
+}
