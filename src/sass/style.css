@@ -542,11 +542,7 @@ a {
 .about__slaiders {
   position: relative;
   margin-bottom: 37px;
-  display: flex;
-  flex-direction: row;
-  gap: 0 25px;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
 }
 @media (max-width: 990px) {
   .about__slaiders {
@@ -564,6 +560,13 @@ a {
   .about__slaiders {
     margin: auto;
   }
+}
+
+.slaiders {
+  display: flex;
+  flex-direction: row;
+  gap: 0 25px;
+  transition: transform 0.5s ease-in-out;
 }
 
 @media (max-width: 412px) {

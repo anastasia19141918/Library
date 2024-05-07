@@ -25,13 +25,9 @@
 .about__slaiders {
   position: relative;
   margin-bottom: 37px;
-  display: flex;
-  flex-direction: row;
-  gap: 0 25px;
-
+  
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
-
+  
   @include media-tablet-big {
     width: 450px;
     margin-left: 27%;
@@ -43,6 +39,14 @@
   @include media-mobile-big {
     margin: auto;
   }
+}
+
+
+.slaiders {
+  display: flex;
+  flex-direction: row;
+  gap: 0 25px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .about__img {
