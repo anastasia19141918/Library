@@ -2146,6 +2146,7 @@ input[type=radio]:checked::after {
 }
 
 .input-register-password, .input-register_email, .input-register_name {
+  position: relative;
   border: 1px solid #BB945F;
 }
 
@@ -2184,6 +2185,34 @@ input[type=radio]:checked::after {
   line-height: 1.2rem;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.input-register_name:invalid,
+.input-register_email:invalid,
+.input-register-password:invalid {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+.input-register_name:invalid:focus,
+.input-register_email:invalid:focus,
+.input-register-password:invalid:focus {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+.input-register-password-control {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 220px;
+  background-image: url("../../src/img/modal/icons-eye-password-hide.png");
+  background-size: 20px 20px;
+}
+
+.input-register-password-control.view {
+  background-image: url("../../src/img/modal/icons-eye-password.png");
+  background-size: 20px 20px;
 }
 
 .modal-buy {
