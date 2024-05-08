@@ -106,9 +106,10 @@
 .prev-button,.nex-button {
   display: none;
   position: absolute;
-  @include media-tablets {
+  @include media-tablet {
     display: block;
-    top: 135%;
+    top: 189%;
+    font-size: 24px;
     transform: translateY(-50%);
 
     width: 50px;
@@ -118,10 +119,7 @@
     font-size: 34px;
     cursor: pointer;
   }
-  @include media-tablet {
-    top: 189%;
-    font-size: 24px;
-  }
+ 
   @include media-tablet-small {
     top: 175%;
   }

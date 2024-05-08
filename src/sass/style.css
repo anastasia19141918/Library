@@ -629,10 +629,11 @@ a {
   display: none;
   position: absolute;
 }
-@media (max-width: 981px) {
+@media (max-width: 768px) {
   .prev-button, .nex-button {
     display: block;
-    top: 135%;
+    top: 189%;
+    font-size: 24px;
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
@@ -640,12 +641,6 @@ a {
     border: none;
     font-size: 34px;
     cursor: pointer;
-  }
-}
-@media (max-width: 768px) {
-  .prev-button, .nex-button {
-    top: 189%;
-    font-size: 24px;
   }
 }
 @media (max-width: 690px) {
