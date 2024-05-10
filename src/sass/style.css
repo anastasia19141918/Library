@@ -131,6 +131,9 @@ a {
   background-image: url("../../src/img/header/icon_profile.svg");
   background-size: 28px 28px;
   align-self: center;
+  color: #BB945F;
+  font-size: 2.3rem;
+  text-transform: uppercase;
   cursor: pointer;
 }
 @media (max-width: 990px) {
@@ -152,6 +155,10 @@ a {
     background-size: 31px 31px;
     background-repeat: no-repeat;
   }
+}
+
+.header__icon__activeProf {
+  background-image: none;
 }
 
 .wrapper {

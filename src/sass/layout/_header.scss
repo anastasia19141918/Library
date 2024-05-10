@@ -45,6 +45,9 @@
   background-image: url('../../src/img/header/icon_profile.svg');
   background-size: 28px 28px;
   align-self: center;
+  color: $color-form;
+  font-size: 2.3rem;
+  text-transform: uppercase;
   cursor: pointer;
   @include media-tablet-big {
     position: relative;
@@ -60,4 +63,8 @@
     background-size: 31px 31px;
     background-repeat: no-repeat;
   }
+}
+
+.header__icon__activeProf {
+  background-image: none;
 }

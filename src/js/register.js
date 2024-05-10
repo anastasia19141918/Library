@@ -1,3 +1,4 @@
+
 const registration = document.getElementById('register');
 const registerlibraryCard = document.getElementById('register_libraryCard');
 
@@ -11,6 +12,7 @@ const eye = document.getElementById('input-register-password-control');
 
 const btnRegistr = document.getElementById('modal-register__btn');
 const notValid = document.getElementById('modal-register__notValid');
+const iconProfile = document.getElementById('header__icon');
 
 registration.addEventListener('click', function(){
   modalRegistr.classList.add('modal-register__active');
@@ -53,13 +55,30 @@ function registrBtn(e) {
   const lastName = document.getElementById('input-register_nameLast').value;
   const email = document.getElementById('input-register_email').value;
   const password = document.getElementById('input-register-password').value;
-
   e.preventDefault();
 
   if(firstName !== '' && lastName !== '' && email !== '' && password !== '') {
-    console.log('ne пусто');
+    if (isvalidmail(email)) {
+      
+      let name = firstName;
+      let splitname = name.split('');
+      let newArrow = splitname.slice(0, 2);
+      let namelast = newArrow.join('');
+      iconProfile.classList.add('header__icon__activeProf');
+      iconProfile.innerText = namelast;
+    }
   }
+  
   else {
     notValid.classList.add('modal-register__notValid__active');
   }
+
 }
+
+function isvalidmail(email){
+  const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+  return EMAIL_REGEXP.test(email);
+}
+
+
+
