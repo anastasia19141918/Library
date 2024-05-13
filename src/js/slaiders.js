@@ -154,9 +154,7 @@ dots.forEach(function(element, indexDot){
   })
 })
 
-window.addEventListener('load', () => {
-  slaid();
-});
+
 
 
 

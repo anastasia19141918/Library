@@ -64,8 +64,18 @@ function registrBtn(e) {
       let splitname = name.split('');
       let newArrow = splitname.slice(0, 2);
       let namelast = newArrow.join('');
+      
       iconProfile.classList.add('header__icon__activeProf');
-      iconProfile.innerText = namelast;
+      iconProfile.innerHTML = namelast;
+
+
+      const informLogin = [firstName, lastName, email, password, iconProfile.innerHTML];
+      localStorage.setItem('regist', JSON.stringify(informLogin));
+      
+      
+      //let iconLocal = iconProfile.innerHTML;
+      //localStorage.setItem('iconImg', iconLocal); local
+      
     }
   }
   
@@ -80,5 +90,26 @@ function isvalidmail(email){
   return EMAIL_REGEXP.test(email);
 }
 
+function getLocalStorage() {
+  const icon = document.getElementById('header__icon');
 
+  if(localStorage.getItem('regist')) {
+    let arrow = JSON.parse(localStorage.getItem("regist"));
+    
+    const firstName = document.getElementById('input-register_name');
+    const lastName = document.getElementById('input-register_nameLast');
+    const email = document.getElementById('input-register_email');
+    const password = document.getElementById('input-register-password');
+
+    firstName.value = arrow[0];
+    lastName.value = arrow[1];
+    email.value = arrow[2];
+    password.value = arrow[3];
+
+    icon.classList.add('header__icon__activeProf');
+    icon.innerHTML = arrow[4];
+  }
+}
+
+window.addEventListener('load', getLocalStorage);
 
