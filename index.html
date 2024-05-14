@@ -43,14 +43,14 @@
       <div class="log login" id="log_login">
         <div class="login__title">Profile</div>
         <div class="login__line"></div>
-        <div class="login__profile">My profile</div>
+        <div class="login__profile" id="myProfile">My profile</div>
         <div class="login__log">Log Out</div>
       </div>
 
       <div class="log login-register" id="log_register">
         <div class="login-register__title">Profile</div>
         <div class="login__line"></div>
-        <div class="login__profile">Log In</div>
+        <div class="login__profile" id="login">Log In</div>
         <div class="login__log" id="register">Register</div>
       </div>
 
@@ -226,11 +226,11 @@
 
         <!--modal buy start-->
   
-        <div class="modal-buy">
-          <div class="modal-buy__body">
+        <div class="modal-buy" id="modal-buy">
+          <div class="modal-buy__body" id="modal-buy__body">
             <div class="modal-buy__header">
               <h3 class="modal-buy__about">Buy a library card</h3> 
-              <div class="modal-buy__close"></div>
+              <div class="modal-buy__close" id="modal-buy__close"></div>
             </div>
             <div class="modal-buy__main">
               <div class="modal-buy__form">
@@ -496,14 +496,14 @@
               <h4 class="modal__title">Login</h4>
               <div class="modal_closed" id="modal_closed"></div>
               <label class="modal__email">
-                E-mail or readers card
-                <input type="email" class="input-email">
+                E-mail 
+                <input type="email" class="input-email" id="input-email_login">
               </label>
               <label class="modal__password">
                 Password
-                <input type="password" class="input-password">
+                <input type="password" class="input-password" id="input-password_login">
               </label>
-              <button class="modal__btn">Log In</button>
+              <button class="modal__btn" id="modal__btn_login">Log In</button>
               <div class="modal__account">
                 <div class="modal__text">Don’t have an account?</div>
                 <a href="#" class="modal__link">Register</a>
@@ -546,22 +546,24 @@
 
          <!--modal my profile start-->
 
-          <div class="modal-profile">
-            <div class="modal-profile__body">
+          <div class="modal-profile" id="modal-profile">
+            <div class="modal-profile__body" id="modal-profile__body">
               <div class="modal-profile__name">
-                <div class="modal-profile__icon">JD</div>
-                <div class="modal-profile__famile">John Doe</div>
+                <div class="modal-profile__icon" id="modal-profile__icon"></div>
+                <div class="modal-profile__famile" id="modal-profile__famile">
+                  <span class="modal-profile__names" id="modal-profile__names"></span> <span class="modal-profile__lastName" id="modal-profile__lastName"></span>
+                </div>
               </div>
               <div class="modal-profile__desk">
                 <h3 class="modal-profile__title">My profile</h3>
-                <div class="modal-profile__close"></div>
+                <div class="modal-profile__close" id="modal-profile__close"></div>
 
                 <div class="modal-profile__info">
 
                   <div class="profile">
                     <h4 class="profile__title">Visits</h4>
                     <span class="profile__icon profile__icon__visits"></span>
-                    <div class="profile__count">0</div>
+                    <div class="profile__count" id="profile__visits">0</div>
                   </div>
 
                   <div class="profile">
@@ -576,19 +578,6 @@
                     <div class="profile__count">0</div>
                   </div>
                 </div>
-
-                <div class="modal-profile__rented">
-                  <div class="modal-profile__book">Rented books</div>
-                  <ul class="modal-profile__books">
-                    <li class="modal-profile__item">The Last Queen, Clive Irving</li>
-                    <li class="modal-profile__item">Dominicana, Angie Cruz</li>
-                  </ul>
-                  <div class="modal-profile__card">
-                    <span class="modal-profile__cardProfile">Card number</span><span class="modal-profile__number">F00234030</span><span class="modal-profile__save"></span>
-                  </div>
-                </div>
-
-              </div>
             </div>
           </div>
 
@@ -638,8 +627,9 @@
   <script src="./src/js/burger-menu.js"></script>
   <script src="./src/js/registr-icon.js"></script>
   <script src="./src/js/register.js"></script>
+  <script src="./src/js/login.js"></script>
   <script src="./src/js/slaiders.js"></script>
   <script type="module" src="./src/js/favorite.js"></script>
-  <script src="./src/js/localStorage.js"></script>
+  <script type="module" src="./src/js/favorite-Buy.js"></script>
 </body>
 </html>

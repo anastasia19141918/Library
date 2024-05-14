@@ -6,7 +6,7 @@
   position: fixed;
   opacity: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: .5 all;
+  transition: .5s all;
   pointer-events: none;
 }
 
@@ -72,6 +72,7 @@
   font-size: 2.0rem;
   font-weight: 400;
   align-items: center;
+  text-transform: uppercase;
   @include media-tablet-small {
     padding: 50px;
     align-self: center;
@@ -88,6 +89,9 @@
 }
 
 .modal-profile__famile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0px;
   padding: 5px 15px;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -96,6 +100,8 @@
   line-height: 2.0rem;
   color: $color-black;
   background-color: $color-block-title;
+
+  text-transform: capitalize;
   @include media-tablet-small {
     padding: 20px;
     align-self: center;
@@ -160,6 +166,7 @@
 
 .modal-profile__info {
   margin-bottom: 20px;
+  padding-top: 30%;
   display: flex;
   flex-direction: row;
   gap: 0 30px;
@@ -220,47 +227,7 @@
   margin-bottom: 15px;
 }
 
-.modal-profile__card {
-  display: flex;
-  flex-direction: row;
-  gap: 0 20px;
-  @include media-mobile-samsungS8 {
-    gap: 0 5px;
-  }
-}
 
-.modal-profile__cardProfile {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 500;
-  line-height: 2.0rem;
-  line-height: 2.0rem;
-  color: $color-header-footer;
-}
-
-.modal-profile__number {
-  font-family: 'Inter', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 500;
-  line-height: 2.0rem;
-  line-height: 2.0rem;
-  color: $color-form;
-}
-
-.modal-profile__save {
-  display: block;
-  width: 11px;
-  height: 10px;
-  background-image: url('../../src/img/modal/icon_copy.png');
-  background-size: 11px 10px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  @include media-mobile-samsungA5 {
-    width: 14px;
-    height: 12px;
-    background-size: 14px 12px;
-  }
-}
 
 
 

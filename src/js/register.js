@@ -1,4 +1,10 @@
 
+//icon start
+
+const Loginicon = document.getElementById('log_register');
+
+//icon end
+
 const registration = document.getElementById('register');
 const registerlibraryCard = document.getElementById('register_libraryCard');
 
@@ -13,6 +19,17 @@ const eye = document.getElementById('input-register-password-control');
 const btnRegistr = document.getElementById('modal-register__btn');
 const notValid = document.getElementById('modal-register__notValid');
 const iconProfile = document.getElementById('header__icon');
+
+//modal Profale start
+
+const modalProfIcon = document.getElementById('modal-profile__icon');
+const modalProfName = document.getElementById('modal-profile__names');
+const modalProflastName = document.getElementById('modal-profile__lastName');
+const modalProfVisit = document.getElementById('profile__visits');
+let countBtn = 0;
+//modal Profale end
+
+
 
 registration.addEventListener('click', function(){
   modalRegistr.classList.add('modal-register__active');
@@ -67,15 +84,20 @@ function registrBtn(e) {
       
       iconProfile.classList.add('header__icon__activeProf');
       iconProfile.innerHTML = namelast;
+      iconProfile.setAttribute('title', firstName);
 
-
-      const informLogin = [firstName, lastName, email, password, iconProfile.innerHTML];
+      const informLogin = [firstName, lastName, email, password, iconProfile.innerHTML, modalProfVisit.innerHTML];
       localStorage.setItem('regist', JSON.stringify(informLogin));
+
+      modalProfIcon.innerHTML = namelast;
+      modalProfName.innerHTML = firstName;
+      modalProflastName.innerHTML = lastName;
       
-      
-      //let iconLocal = iconProfile.innerHTML;
-      //localStorage.setItem('iconImg', iconLocal); local
-      
+      let countVizit = Number(modalProfVisit.innerHTML);
+      let btns = countBtn+1;
+      modalProfVisit.innerHTML = countVizit + btns;
+
+      //modalRegistr.classList.remove('modal-register__active'); закрытие окна
     }
   }
   
@@ -95,6 +117,7 @@ function getLocalStorage() {
 
   if(localStorage.getItem('regist')) {
     let arrow = JSON.parse(localStorage.getItem("regist"));
+    console.log(arrow);
     
     const firstName = document.getElementById('input-register_name');
     const lastName = document.getElementById('input-register_nameLast');
@@ -108,6 +131,17 @@ function getLocalStorage() {
 
     icon.classList.add('header__icon__activeProf');
     icon.innerHTML = arrow[4];
+    icon.setAttribute('title', arrow[0]);
+
+    modalProfIcon.innerHTML = arrow[4];
+    modalProfName.innerHTML = arrow[0];
+    modalProflastName.innerHTML = arrow[1];
+    
+    modalProfVisit.innerHTML = arrow[5];
+    
+    modalProfVisit.innerHTML = Number(modalProfVisit.innerHTML) + countBtn+1;
+
+    headerRegistr.classList.add('header__icon__Prof');
   }
 }
 
