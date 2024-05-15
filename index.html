@@ -234,36 +234,39 @@
             </div>
             <div class="modal-buy__main">
               <div class="modal-buy__form">
-                <label class="modal-buy__title">
-                  Bank card number
-                  <input type="text" class="input__buy input__buy_big">
-                </label>
-                <label class="modal-buy__title">
-                  Expiration code
-                  <div class="modal-buy__title_row">
-                    <input type="text" class="input__buy input__buy_smal">
-                    <input type="text" class="input__buy input__buy_smal">
+                <form>
+                  <label class="modal-buy__title">
+                    Bank card number
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_numberCard" required minlength="16">
+                  </label>
+                  <label class="modal-buy__title">
+                    Expiration code
+                    <div class="modal-buy__title_row">
+                      <input type="text" class="input__buy input__buy_smal" id="input__buy_codeFirst" required minlength="2">
+                      <input type="text" class="input__buy input__buy_smal" id="input__buy_codeTwo" required minlength="2">
+                    </div>
+                  </label>
+                  <label class="modal-buy__title">
+                    CVC
+                    <input type="text" class="input__buy input__buy_smal" id="input__buy_CVC" required minlength="3">
+                  <label class="modal-buy__title">
+                    Cardholder name
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_name" required>
+                  </label>
+                  <label class="modal-buy__title">
+                    Postal code
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_code" required>
+                  </label>
+                  <label class="modal-buy__title">
+                    City / Town
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_city" required>
+                  </label>
+                  <div class="modal-buy__button">
+                    <div class="modal-buy__notValid" id="modal-buy__notValid">Please fill in all fields</div>
+                    <button class="modal-buy__butn" id="modal-buy__butn">Buy</button>
+                    <div class="modal-buy__prase">$ 25.00</div>
                   </div>
-                </label>
-                <label class="modal-buy__title">
-                  CVC
-                  <input type="number" class="input__buy input__buy_smal">
-                <label class="modal-buy__title">
-                  Cardholder name
-                  <input type="text" class="input__buy input__buy_big">
-                </label>
-                <label class="modal-buy__title">
-                  Postal code
-                  <input type="text" class="input__buy input__buy_big">
-                 </label>
-                 <label class="modal-buy__title">
-                  City / Town
-                  <input type="text" class="input__buy input__buy_big">
-                </label>
-                <div class="modal-buy__button">
-                  <button class="modal-buy__butn">Buy</button>
-                  <div class="modal-buy__prase">$ 25.00</div>
-              </div>
+                </form>
             </div>
               <p class="modal-buy__text">
               If you are live, work, attend school, or pay property taxes in New York State, 
@@ -427,47 +430,7 @@
               </div>
             </div>
           </div>
-          <!--active start-->
-          <div class="activeCard__block">
-            <h4 class="activeCard__form-title">Your Library card</h4>
-            <div class="activeCard__form">
-              <form class="formActive">
-                <div class="formActive__title">Brooklyn Public Library</div>
-                <label class="formActive__text">
-                  <input type="text" class="inputformActive__text" placeholder="Reader's name">
-                </label>
-                <label class="form__number">
-                  <input type="number" class="inputformActive__number" placeholder="Card number">
-                </label>
-              </form>
-              <div class="formActive__butn">
-                <div class="modal-profile__info formActive__profile__info">
-      
-                  <div class="profile">
-                    <h4 class="profile__title">Visits</h4>
-                    <span class="profile__icon profile__icon__visits"></span>
-                    <div class="profile__count">0</div>
-                  </div>
-      
-                  <div class="profile">
-                    <h4 class="profile__title">Bonuses</h4>
-                    <span class="profile__icon profile__icon__bonuses"></span>
-                    <div class="profile__count">0</div>
-                  </div>
-      
-                  <div class="profile">
-                    <h4 class="profile__title">Books</h4>
-                    <span class="profile__icon profile__icon__books"></span>
-                    <div class="profile__count">0</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--active end-->
-
-          <div class="libraryCard__account">
+         <div class="libraryCard__account">
             <h4 class="libraryCard__account-title">Get a reader card</h4>
             <p class="libraryCard__text">
               You will be able to see a reader card after logging into account or you can register a new account
@@ -475,18 +438,6 @@
             <div class="libraryCard__buttons">
               <button class="libraryCard__btn" id="register_libraryCard">Sign Up</button>
               <button class="libraryCard__btn">Log in</button>
-            </div>
-          </div>
-
-          <div class="formActive__account">
-            <h4 class="formActive__account-title">Visit your profile</h4>
-            <p class="formActive__text">
-              With a digital library card you get free access to the Library’s wide 
-              array of digital resources including e-books, databases, 
-              educational resources, and more
-            </p>
-            <div class="formActive__buttons">
-             <button class="formActive__btn">Profile</button>
             </div>
           </div>
 

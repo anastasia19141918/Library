@@ -97,7 +97,7 @@ function registrBtn(e) {
       let btns = countBtn+1;
       modalProfVisit.innerHTML = countVizit + btns;
 
-      //modalRegistr.classList.remove('modal-register__active'); закрытие окна
+      modalRegistr.classList.remove('modal-register__active'); //закрытие окна
     }
   }
   
