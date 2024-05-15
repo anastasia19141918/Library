@@ -6,6 +6,8 @@ const loginBody = document.getElementById('modal__body');
 const favoriteBtn = document.querySelectorAll('.book__btn');
 const favoriteBuyModal = document.getElementById('modal-buy');
 
+const loginlibraryCard = document.getElementById('login_libraryCard');
+
 
 //profile modal start
 
@@ -49,6 +51,15 @@ document.addEventListener('mouseup', function(e){
     modalProfile.classList.remove('modal-profile__active');
   }
 })
+
+loginlibraryCard.addEventListener('click', function(){
+  loginModal.classList.add('modal__active');
+  if(headerRegistr.classList.contains('header__icon__Prof')) {
+    loginModal.classList.remove('modal__active');
+  }
+})
+
+
 
 //modal prof open  end
 

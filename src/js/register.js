@@ -28,7 +28,7 @@ const modalProflastName = document.getElementById('modal-profile__lastName');
 const modalProfVisit = document.getElementById('profile__visits');
 let countBtn = 0;
 //modal Profale end
-
+ const linkLogin = document.getElementById('modal__text_link');
 
 
 registration.addEventListener('click', function(){
@@ -37,6 +37,9 @@ registration.addEventListener('click', function(){
 
 registerlibraryCard.addEventListener('click', function(){
   modalRegistr.classList.add('modal-register__active');
+  if(headerRegistr.classList.contains('header__icon__Prof')) {
+    modalRegistr.classList.remove('modal-register__active');
+  }
 })
 
 modalRegistrClose.addEventListener('click', function(){
@@ -107,6 +110,11 @@ function registrBtn(e) {
 
 }
 
+linkLogin.addEventListener('click', function(){
+  loginModal.classList.remove('modal__active');
+  modalRegistr.classList.add('modal-register__active');
+})
+
 function isvalidmail(email){
   const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
   return EMAIL_REGEXP.test(email);
@@ -117,7 +125,6 @@ function getLocalStorage() {
 
   if(localStorage.getItem('regist')) {
     let arrow = JSON.parse(localStorage.getItem("regist"));
-    console.log(arrow);
     
     const firstName = document.getElementById('input-register_name');
     const lastName = document.getElementById('input-register_nameLast');
