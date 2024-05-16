@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/sass/style.css">
+  <link rel="icon" href="./src/img/icon/icon.png">
+  <title>Library</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <h1 class="header__title">Brooklyn Public Library</h1>
+      <nav class="header__navigation" id="header__navigation">
+        <ul class="header__itemns" id="header__itemns">
+          <li class="header__itemn">
+              <a href="#about" class="header__link">About</a>
+          </li>
+          <li class="header__itemn">
+            <a href="#favorites" class="header__link">Favorites</a>
+        </li>
+        <li class="header__itemn">
+          <a href="#shop" class="header__link">Coffee shop</a>
+        </li>
+        <li class="header__itemn">
+          <a href="#contacts" class="header__link">Contacts</a>
+        </li><li class="header__itemn">
+          <a href="#libraryCard" class="header__link">Library Card</a>
+        </li>
+
+        </ul>
+      </nav>
+      <div class="header__icon" id="header__icon"></div>
+
+      <div class="burger" id="burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+      </div>
+
+      <!--login start-->
+
+      <div class="log login" id="log_login">
+        <div class="login__title">Profile</div>
+        <div class="login__line"></div>
+        <div class="login__profile" id="myProfile">My profile</div>
+        <div class="login__log" id="log__out">Log Out</div>
+      </div>
+
+      <div class="log login-register" id="log_register">
+        <div class="login-register__title">Profile</div>
+        <div class="login__line"></div>
+        <div class="login__profile" id="login">Log In</div>
+        <div class="login__log" id="register">Register</div>
+      </div>
+
+      <!--login end-->
+    </div>
+  </header>
+  <main>
+
+    <section class="welcome">
+      <div class="welcome__desc">
+          <h2 class="welcome__text">
+            Welcome <br> to the Brooklyn Library
+          </h2>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrapper">
+        <h3 class="title about__title">
+          About
+        </h3>
+        <div class="line"></div>
+        <p class="text about__text">
+          The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside 
+        </p>
+       
+        <div class="about__slaiders" id="about__slaiders">
+
+          <div class="slaiders" id="slaiders">
+            
+            <div class="about__slaid" id="about__slaid">
+              <img src="./src/img/about/About-1.jpg" alt="library img" class="about__img" id="about__img">
+            </div>
+
+            <div class="about__slaid">
+              <img src="./src/img/about/About-2.jpg" alt="library img" class="about__img">
+            </div>
+
+            <div class="about__slaid">
+              <img src="./src/img/about/About-3.jpg" alt="library img" class="about__img">
+            </div>
+
+            <div class="about__slaid">
+              <img src="./src/img/about/About-4.jpg" alt="library img" class="about__img">
+            </div>
+
+            <div class="about__slaid">
+              <img src="./src/img/about/About-5.jpg" alt="library img" class="about__img">
+            </div>
+          </div>
+
+        </div>
+
+        <button class="prev-button prev" id="prev-button">&lt;</button>
+        <button class="nex-button nex" id="nex-button">&gt;</button>
+       
+        <div class="about__paginations" id="about__paginations">
+          <div class="about__btn about__activ" id="about__btn_one"></div>
+          <div class="about__btn" id="about__btn_two"></div>
+          <div class="about__btn" id="about__btn_three"></div>
+          <div class="about__btn about__btn_media" id="about__btn_four"></div>
+          <div class="about__btn about__btn_media" id="about__btn_five"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="favorites" id="favorites">
+      <div class="wrapper">
+        <h3 class="title favorites__title">
+          Favorites
+        </h3>
+        <div class="line"></div>
+        <div class="favorites__btns">
+          <p class="favorites__pick">Pick favorites of season</p>
+        
+          <div class="favorites__btn" id="favorites__btn">
+
+            <div class="favorites__button">
+              <input type="radio" class="input input__winter" value="winter" checked name="question" id="winter">
+              <label for="winter" class="input__label favorites__button__active">Winter</label>
+            </div>
+
+            <div class="favorites__button">
+              <input type="radio" class="input input__spring" value="spring" name="question" id="spring">
+              <label for="spring" class="input__label">Spring</label>
+            </div>
+
+            <div class="favorites__button">
+              <input type="radio" class="input input__summer" value="summer" name="question" id="summer">
+              <label for="summer" class="input__label">Summer</label>
+            </div>
+
+            <div class="favorites__button">
+              <input type="radio" class="input input__autumn" value="autumn" name="question" id="autumn">
+              <label for="autumn" class="input__label">Autumn</label>
+            </div>
+            
+          </div>
+        </div>
+
+          
+
+        <div class="favorites__books" id="favorites__books">
+
+          <div class="book" id="book">
+            <h3 class="book__title">Staff Picks</h3>
+            <div class="book__line"></div>
+            <div class="book__name">The Book Eaters</div>
+            <div class="book__author">By Sunyi Dean</div>
+            <p class="book__desk">
+              An unusual sci-fi story about a book eater woman who tries desperately to save 
+              her dangerous mind-eater son from tradition and certain death. 
+              Complete with dysfunctional family values, light Sapphic romance, 
+              and a strong, complex protagonist. Not for the faint of heart.       
+            </p>
+            <img src="./src/img/favorite/book-0-1.jpg" alt="book" class="book__img">
+           <div class="book__button">
+              <button class="book__btn">Buy</button>
+            </div>
+          </div>
+
+          <div class="book">
+            <h3 class="book__title">Staff Picks</h3>
+            <div class="book__line"></div>
+            <div class="book__name">Cackle</div>
+            <div class="book__author">By Rachel Harrison</div>
+            <p class="book__desk">
+              Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? 
+              Look no further than here - where a woman recovering 
+              from a breakup moves to a quaint town in upstate 
+              New York and befriends a beautiful witch. 
+            </p>
+            <img src="./src/img/favorite/book-0-2.jpg" alt="book" class="book__img">
+            <div class="book__button">
+              <button class="book__btn">Buy</button>
+            </div>
+          </div>
+
+          <div class="book">
+            <h3 class="book__title">Staff Picks</h3>
+            <div class="book__line"></div>
+            <div class="book__name">Dante: Poet of the Secular World</div>
+            <div class="book__author">By Erich Auerbach</div>
+            <p class="book__desk">
+              Auerbach's engaging book places the 'Comedy' within the tradition of epic,
+               tragedy, and philosophy in general, 
+               arguing for Dante's uniqueness as one who raised the 
+               individual and his drama of soul into something 
+               of divine significance—an inspired introduction to Dante's main themes
+            </p>
+            <img src="./src/img/favorite/book-0-3.jpg" alt="book" class="book__img">
+            <div class="book__button">
+              <button class="book__btn">Buy</button>
+            </div>
+          </div>
+
+          <div class="book">
+            <h3 class="book__title">Staff Picks</h3>
+            <div class="book__line"></div>
+            <div class="book__name">The Last Queen</div>
+            <div class="book__author">By Clive Irving</div>
+            <p class="book__desk">
+              A timely and revelatory new biography of Queen Elizabeth (and her family) 
+              exploring how the Windsors have evolved and thrived as the modern world has changed around them.
+            </p>
+            <img src="./src/img/favorite/book-0-4.jpg" alt="book" class="book__img">
+            <div class="book__button">
+              <button class="book__btn">Buy</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!--modal buy start-->
+  
+        <div class="modal-buy" id="modal-buy">
+          <div class="modal-buy__body" id="modal-buy__body">
+            <div class="modal-buy__header">
+              <h3 class="modal-buy__about">Buy a library card</h3> 
+              <div class="modal-buy__close" id="modal-buy__close"></div>
+            </div>
+            <div class="modal-buy__main">
+              <div class="modal-buy__form">
+                <form>
+                  <label class="modal-buy__title">
+                    Bank card number
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_numberCard" required minlength="16">
+                  </label>
+                  <label class="modal-buy__title">
+                    Expiration code
+                    <div class="modal-buy__title_row">
+                      <input type="text" class="input__buy input__buy_smal" id="input__buy_codeFirst" required minlength="2">
+                      <input type="text" class="input__buy input__buy_smal" id="input__buy_codeTwo" required minlength="2">
+                    </div>
+                  </label>
+                  <label class="modal-buy__title">
+                    CVC
+                    <input type="text" class="input__buy input__buy_smal" id="input__buy_CVC" required minlength="3">
+                  <label class="modal-buy__title">
+                    Cardholder name
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_name" required>
+                  </label>
+                  <label class="modal-buy__title">
+                    Postal code
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_code" required>
+                  </label>
+                  <label class="modal-buy__title">
+                    City / Town
+                    <input type="text" class="input__buy input__buy_big" id="input__buy_city" required>
+                  </label>
+                  <div class="modal-buy__button">
+                    <div class="modal-buy__notValid" id="modal-buy__notValid">Please fill in all fields</div>
+                    <button class="modal-buy__butn" id="modal-buy__butn">Buy</button>
+                    <div class="modal-buy__prase">$ 25.00</div>
+                  </div>
+                </form>
+            </div>
+              <p class="modal-buy__text">
+              If you are live, work, attend school, or pay property taxes in New York State, 
+              you can get a $25 digital library card right now using this online form. 
+              Visitors to New York State can also use this form to apply for a temporary card.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--modal buy end-->
+
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="wrapper">
+        <h3 class="title shop__title">
+          Coffee Shop
+        </h3>
+        <div class="line"></div>
+        <p class="shop__text">
+          In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+          you can get a favorite book and read in coffee shop. 
+          Our barista to cook you best coffee, and also you can try desserts from bakery.
+        </p>
+        <div class="shop__menu">
+
+          <div class="shop__drink menu">
+            <h4 class="menu__title">Coffee & Tea</h4>
+
+            <div class="menu__desc menu__desc__coffe">
+              <div class="menu__type">Cold Brew Coffee</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$3</div>
+            </div>
+
+            <div class="menu__desc menu__desc__coffe">
+              <div class="menu__type">French Press Pot</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$5</div>
+            </div>
+
+            <div class="menu__desc menu__desc__coffe">
+              <div class="menu__type">Espresso</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$2</div>
+            </div>
+
+            <div class="menu__desc menu__desc__coffe">
+              <div class="menu__type">Cappuccino</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$4</div>
+            </div>
+
+            <div class="menu__desc menu__desc__coffe">
+              <div class="menu__type">Hot tea</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$2</div>
+            </div>
+
+            <div class="menu__desc menu__desc__coffe">
+              <div class="menu__type">Cold tea</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$2</div>
+            </div>
+          </div>
+
+          <div class="shop__dessert menu">
+            <h4 class="menu__title">Desserts & Cakes</h4>
+
+            <div class="menu__desc menu__dessert">
+              <div class="menu__type menu__desc__dessert">Forest Gateau</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$16</div>
+            </div>
+
+            <div class="menu__desc menu__dessert">
+              <div class="menu__type menu__desc__dessert">Blue Moon</div>
+              <div class="menu__line "></div>
+              <div class="menu__price">$16</div>
+            </div>
+
+            <div class="menu__desc menu__dessert">
+              <div class="menu__type menu__desc__dessert">Truffle Cake</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$15</div>
+            </div>
+
+            <div class="menu__desc menu__dessert">
+              <div class="menu__type menu__desc__dessert">Chocolate Cake</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$18</div>
+            </div>
+
+            <div class="menu__desc menu__dessert">
+              <div class="menu__type menu__desc__dessert">Poet’s Dream Cake</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$16</div>
+            </div>
+
+            <div class="menu__desc menu__dessert">
+              <div class="menu__type menu__desc__dessert">Pineapple Cake</div>
+              <div class="menu__line"></div>
+              <div class="menu__price">$14</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="wrapper">
+        <h3 class="title contact__title">
+          Our Contacts
+        </h3>
+        <div class="line"></div>
+        <div class="contacts__desk">
+          <div class="contacts__adress">
+            <div class="contacts__inquiries">
+              <div class="contacts__text inquiries library">For All Library Inquiries:</div>
+              <div class="contacts__text call">Please call (617) 730-2370</div>
+              <div class="contacts__text service">For TTY service, please call (617) 730-2370</div>
+              <div class="contacts__text putterham">Putterham Library: (617) 730-2385</div>
+            </div>
+            <div class="contacts__senior">
+              <div class="contacts__text inquiries senior">Senior Staff</div>
+              <div class="contacts__text library">Library Director: <a href="mailto: AmandaHirst@gmail.com" class="inquiries">Amanda Hirst</a></div>
+            </div>
+          </div>
+          <div class="contacts__card">
+            <img src="./src/img/contact/card.jpg" alt="google card" class="contacts__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="libraryCard" id="libraryCard">
+      <div class="wrapper">
+        <h3 class="title libraryCard__title">
+          Digital Library Cards
+        </h3>
+        <div class="line"></div>
+
+        <div class="libraryCard__cards">
+
+          <div class="libraryCard__block">
+            <h4 class="libraryCard__form-title">Find your Library card</h4>
+            <div class="libraryCard__form">
+              <form class="form">
+                <div class="form__title">Brooklyn Public Library</div>
+                <label class="form__text">
+                  <input type="text" class="input__text" placeholder="Reader's name">
+                </label>
+                <label class="form__number">
+                  <input type="number" class="input__number" placeholder="Card number">
+                </label>
+              </form>
+              <div class="libraryCard__butn">
+                <button class="libraryCard__button">Check the card</button>
+              </div>
+            </div>
+          </div>
+         <div class="libraryCard__account">
+            <h4 class="libraryCard__account-title">Get a reader card</h4>
+            <p class="libraryCard__text">
+              You will be able to see a reader card after logging into account or you can register a new account
+            </p>
+            <div class="libraryCard__buttons">
+              <button class="libraryCard__btn" id="register_libraryCard">Sign Up</button>
+              <button class="libraryCard__btn" id="login_libraryCard">Log in</button>
+            </div>
+          </div>
+
+          <!--modal start-->
+          <div class="modal" id="modal">
+            <div class="modal__body" id="modal__body">
+              <h4 class="modal__title">Login</h4>
+              <div class="modal_closed" id="modal_closed"></div>
+              <label class="modal__email">
+                E-mail 
+                <input type="email" class="input-email" id="input-email_login">
+              </label>
+              <label class="modal__password">
+                Password
+                <input type="password" class="input-password" id="input-password_login">
+              </label>
+              <button class="modal__btn" id="modal__btn_login">Log In</button>
+              <div class="modal__account">
+                <div class="modal__text">Don’t have an account?</div>
+                <a href="#!" class="modal__link" id="modal__text_link">Register</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-register" id="modal-register">
+            <div class="modal-register__body" id="modal-register__body">
+              <h4 class="modal-register__title">Register</h4>
+              <div class="modal-register_closed" id="modal-register_closed"></div>
+              <form>
+                <label class="modal-register_first-name">
+                  First name
+                  <input type="text" class="input-register_name" id="input-register_name" required>
+                </label>
+                <label class="modal-register_last-name">
+                  Last name
+                  <input type="text" class="input-register_name" id="input-register_nameLast" required>
+                </label>
+                <label class="modal-register__email" for="fname">
+                  E-mail 
+                  <input type="email" class="input-register_email" id="input-register_email" required>
+                </label>
+                <label class="modal-register__password">
+                  Password
+                  <input type="password" class="input-register-password" minlength="8" required id="input-register-password">
+                  <a href="#" class="input-register-password-control" onclick="return showPassword(this)" id="input-register-password-control"></a>
+                </label>
+                <button class="modal-register__btn" id="modal-register__btn" value=Ok>Sign Up</button>
+                <div class="modal-register__notValid" id="modal-register__notValid">Please fill in all fields</div>
+              </form>  
+            </div>
+          </div>
+         <!--modal end-->
+
+         <!--modal my profile start-->
+
+          <div class="modal-profile" id="modal-profile">
+            <div class="modal-profile__body" id="modal-profile__body">
+              <div class="modal-profile__name">
+                <div class="modal-profile__icon" id="modal-profile__icon"></div>
+                <div class="modal-profile__famile" id="modal-profile__famile">
+                  <span class="modal-profile__names" id="modal-profile__names"></span> <span class="modal-profile__lastName" id="modal-profile__lastName"></span>
+                </div>
+              </div>
+              <div class="modal-profile__desk">
+                <h3 class="modal-profile__title">My profile</h3>
+                <div class="modal-profile__close" id="modal-profile__close"></div>
+
+                <div class="modal-profile__info">
+
+                  <div class="profile">
+                    <h4 class="profile__title">Visits</h4>
+                    <span class="profile__icon profile__icon__visits"></span>
+                    <div class="profile__count" id="profile__visits">0</div>
+                  </div>
+
+                  <div class="profile">
+                    <h4 class="profile__title">Bonuses</h4>
+                    <span class="profile__icon profile__icon__bonuses"></span>
+                    <div class="profile__count">0</div>
+                  </div>
+
+                  <div class="profile">
+                    <h4 class="profile__title">Books</h4>
+                    <span class="profile__icon profile__icon__books"></span>
+                    <div class="profile__count">0</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+         <!--modal my profile end-->
+        </div>
+      </div>
+      
+    </section>
+   
+
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__contact">
+        <div class="footer__social">
+          <a class="footer__text" href="https://www.google.com/maps/place/286+Cadman+Plz+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/@40.6956458,-73.9912976,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!16s%2Fg%2F11s2lgz8ns?entry=ttu">
+            286 Cadman Plaza, New York, NY 11238, United States
+          </a>
+          <div class="footer__media">
+            <a href="https://twitter.com/" class="footer__twitter"><span class="icon__twitter icon"></span></a>
+            <a href="https://www.instagram.com/" class="footer__instagram"><span class="icon__instagram icon"></span></a>
+            <a href="https://www.facebook.com/" class="footer__facebook"><span class="icon__facebook icon"></span></a>
+          </div>
+        </div>
+        <div class="footer__time">
+          <div class="footer__days">
+            <div class="footer__schedule">Mon - Fri</div>
+            <div class="footer__schedule">08:00 am - 07:00 pm</div>
+          </div>
+          <div class="footer__days">
+            <div class="footer__schedule">Sat - Sun</div>
+            <div class="footer__schedule">10:00 am - 06:00 pm</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__school">
+        <div class="footer__inf">2024</div>
+        <a class="footer__inf" href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/library/library.md">
+          The Rolling Scopes School
+        </a>
+        <a href="https://github.com/anastasia19141918" class="footer__inf githab">anastasia19141918</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./src/js/burger-menu.js"></script>
+  <script src="./src/js/registr-icon.js"></script>
+  <script src="./src/js/register.js"></script>
+  <script src="./src/js/login.js"></script>
+  <script src="./src/js/slaiders.js"></script>
+  <script type="module" src="./src/js/favorite.js"></script>
+  <script type="module" src="./src/js/favorite-Buy.js"></script>
+  <script type="module" src="./src/js/login-out.js"></script>
+</body>
+</html>

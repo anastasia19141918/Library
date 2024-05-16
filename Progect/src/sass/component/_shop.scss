@@ -1,0 +1,156 @@
+.shop {
+  padding: 0 0 15px 0;
+  @include media-destop-small {
+    padding: 0 20px 15px 20px;
+  }
+  @include media-tablet-big {
+    padding: 0 40px 15px 40px;
+  }
+  @include media-tablet {
+    padding: 0 0px 15px 0px;
+  }
+  @include media-tablet-small {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.shop__title {
+  letter-spacing: 1.3px;
+  @include media-tablet {
+    letter-spacing: 1.8px;
+  }
+}
+
+.shop__text {
+  margin: 0 0 40px 0;
+  padding: 40px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  letter-spacing: 2px;
+  line-height: 4.0rem;
+  text-align: center;
+  @include media-destop  {
+    padding: 40px 20px 0 20px;
+  }
+  @include media-tablet {
+    width: 738px;
+    margin: 0 0 40px -5px;
+  }
+  @include media-tablet-small {
+    width: 620px;
+    margin-left: 0;
+  }
+  @include media-mobile-big {
+    width: 550px;
+  }
+  @include media-mobile {
+    width: 430px;
+  }
+  @include media-mobile-big {
+    width: 370px;
+    text-align: left;
+  }
+  @include media-mobile-samsungA5 {
+    width: 300px;
+  }
+  @include media-mobile-samsungS8 {
+    width: 280px;
+    font-size: 2.5rem;
+  }
+  @include mobile-smail {
+    width: 260px;
+  }
+}
+
+.shop__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include media-destop  {
+    flex-direction: column;
+  }
+}
+
+.shop__drink {
+  padding-left: 20px;
+}
+
+.menu__title {
+  margin: 0 0 40px 0;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 4.0rem;
+  color: $color-form;
+  line-height: 4.0rem;
+  letter-spacing: 2px;
+}
+
+.menu__desc {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__dessert {
+  gap: 0 58px;
+  @include media-destop-small {
+    justify-content: end;
+  }
+  @include media-mobile-iphone  {
+    gap: 0 20px;
+  }
+}
+
+.menu__desc__coffe {
+  gap: 0 50px;
+  @include media-mobile-iphone  {
+    gap: 0 10px;
+  }
+}
+
+.shop__dessert {
+  text-align: right;
+}
+
+.menu__type {
+  width: 215px;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 4.0rem;
+  letter-spacing: 2px;
+  color: $color-header-footer;
+  @include media-mobile-iphone  {
+    width: 130px;
+  }
+}
+
+.menu__line {
+  width: 100px;
+  height: 1px;
+  align-self: center;
+  background-color: $color-form;
+}
+
+.menu__price {
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 2px;
+  @include media-mobile-iphone  {
+    align-self: center;
+  }
+}
+
+.menu__desc__dessert {
+  text-align: right;
+  @include media-mobile-iphone  {
+    text-align: left;
+  }
+}
+
+
+
