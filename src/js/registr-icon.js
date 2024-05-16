@@ -15,7 +15,6 @@ headerRegistr.addEventListener('click', function(){
   }
 })
 
-
 document.addEventListener('click', function(e){
   const click = e.composedPath().includes(headerRegistr);
   if(!click) {
