@@ -1,0 +1,107 @@
+.contacts {
+  padding: 0 0 50px 0;
+  @include media-destop-small {
+    padding: 0 40px 50px 40px;
+  }
+  @include media-tablet {
+    padding: 0 20px 51px 20px;
+  }
+}
+
+.contact__title {
+  letter-spacing: 1.3px;
+}
+
+.contacts__desk {
+  display: flex;
+  padding: 40px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  @include media-destop  {
+    flex-direction: column;
+  }
+}
+
+.contacts__adress {
+  margin-bottom: 63px;
+  @include media-mobile-big {
+    margin-bottom: 0px;
+  }
+}
+
+.contacts__text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 2.5px;
+  word-spacing: -1.6px;
+  @include media-tablet {
+    letter-spacing: 2.2px;
+  }
+}
+
+.inquiries {
+  font-weight: 700;
+  color: $color-black;
+}
+
+.contacts__card {
+  @include media-tablet-small {
+    text-align: center;
+  }
+}
+
+.contacts__img {
+  @include media-tablet-small {
+    width: 600px;
+    height: 320px;
+  }
+  @include media-mobile-big {
+    width: 520px;
+    height: 300px;
+  }
+  @include media-mobile {
+    width: 450px;
+    height: 250px;
+  }
+  @include media-mobile-big {
+    width: 380px;
+    height: 250px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 350px;
+    height: 290px;
+  }
+  @include media-mobile-iphone  {
+    width: 300px;
+    height: 220px;
+  }
+  @include mobile-smail {
+    width: 280px;
+  }
+}
+
+//margin-top start
+
+.library {
+  margin-bottom: 40px;
+}
+
+.call {
+  margin-bottom: 20px;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.putterham {
+  margin-bottom: 40px;
+}
+
+.senior {
+  margin-bottom: 20px;
+}
+
+//margin top end

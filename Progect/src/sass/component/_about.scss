@@ -1,0 +1,164 @@
+.about {
+  padding: 15px 0px 15px 0px;
+  @include media-mobile-samsungA5 {
+    padding: 15px;
+  }
+}
+
+.about__text {
+  padding: 40px 0 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  @include media-tablet {
+    padding: 40px 38px 20px;
+  }
+  @include  mobile-smail {
+    padding: 40px 10px 20px;
+  }
+}
+
+//slaider start
+
+.about__slaiders {
+  position: relative;
+  margin-bottom: 37px;
+  
+  overflow: hidden;
+  
+  @include media-tablet-big {
+    width: 450px;
+    margin-left: 27%;
+  }
+  @include media-tablet {
+    margin-left: 21%;
+    margin-bottom: 22px;
+  }
+  @include media-mobile-big {
+    margin: auto;
+  }
+}
+
+
+.slaiders {
+  display: flex;
+  flex-direction: row;
+  gap: 0 25px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.about__img {
+  @include media-mobile-samsungA5 {
+    width: 360px;
+  }
+  @include media-mobile-iphone  {
+    width: 320px;
+  }
+  @include  mobile-smail {
+    width: 280px;
+  }
+}
+
+//slaider end
+
+//slaber pagination start
+
+
+.about__paginations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 10px;
+  cursor: pointer;
+  @include media-tablet {
+    margin-left: 17px;
+  }
+  @include media-mobile-big {
+    padding: 20px 0px 0px 0px;
+  }
+}
+
+
+.about__btn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-header-footer;
+  cursor: pointer;
+}
+
+.about__activ {
+  background-color: $color-form;
+  cursor: default;
+}
+
+.about__btn_media {
+  display: none;
+  @include media-tablet {
+    display: block;
+  }
+}
+
+//slaber pagination end
+
+.prev-button,.nex-button {
+  display: none;
+  position: absolute;
+  @include media-tablet {
+    display: block;
+    top: 189%;
+    font-size: 24px;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+  }
+ 
+  @include media-tablet-small {
+    top: 175%;
+  }
+  @include  media-mobile-samsungA5 {
+    top: 165%;
+    color: white;
+    font-weight: 500;
+  }
+  @include media-mobile-samsungS8 {
+    top: 150%;
+  }
+  @include mobile-smail {
+    top: 148%;
+  }
+}
+
+.prev {
+  @include media-tablet {
+    left: 9%;
+  }
+  @include  media-mobile-samsungA5 {
+    left: 4%;
+  }
+}
+
+.nex {
+   @include media-tablets {
+    left: 90%;
+  }
+  @include media-tablet {
+    left: 87%;
+  }
+  @include media-tablet-small {
+    left: 89%;
+  }
+  @include  media-mobile-samsungA5 {
+    left: 87%;
+  }
+  @include mobile-smail {
+    left: 80%;
+  }
+}

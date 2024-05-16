@@ -1,0 +1,49 @@
+.welcome {
+  padding: 15.5% 0 10.6%;
+  background-image: url('../../src/img/welcome/Welcome.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include media-tablet {
+    padding: 31% 0 22%;
+  }
+}
+
+.welcome__desc {
+  max-width: 600px;
+  padding: 35px 19px;
+  background-color: $color-header-footer;
+}
+
+.welcome__text {
+  width: 370px;
+  margin: 0 0 0 23%;
+  text-align: center;
+  font-size: 4.0rem;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  line-height: 5.0rem;
+  color: $color-block-title;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  @include media-tablet {
+    margin: 0 0 0 15.5%;
+  }
+  @include media-mobile-big {
+    margin: auto;
+  }
+  @include media-mobile-samsungA5 {
+    font-size: 3.0rem;
+  }
+
+  @include media-mobile-iphone  {
+    width: 320px;
+    font-size: 3.0rem;
+  }
+
+  @include  mobile-smail {
+    margin-left: -22px;
+    font-size: 2.5rem;
+  }
+
+}

@@ -1,0 +1,85 @@
+.header__navigation {
+   padding-left: 31%;
+   @include media-destop-big {
+    padding-left: 20%;
+  }
+
+  @include media-destop  {
+    padding-left: 10%;
+  }
+  @include media-tablet-big {
+    position:absolute;
+    width: 300px;
+    margin: -12px 0px 0px 57%;
+    padding: 60px 40px;
+    background-color: $color-black;
+
+    transform: translateX(120%);
+    transition: all .5s ease-in-out;
+  }
+
+  @include media-tablet-small {
+    margin: -16px 0px 0px 45%;
+  }
+  @include media-mobile {
+    width: 200px;
+    margin: -16px 0px 0px 41%;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 90px 10px;
+    margin: -16px 0px 0px 40%;
+  }
+  @include media-mobile-samsungS8 {
+    padding: 90px 10px 8px 10px;
+    margin: -16px 0px 0px 25%;
+  }
+  @include mobile-smail {
+    padding: 90px 10px 0px 10px;
+  }
+}
+
+.header__navigation_active {
+  transform: translateX(0%);
+}
+
+.header__itemns {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include media-tablet-big {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px 0px;
+  }
+}
+
+.header__itemn {
+  margin-right: 34px;
+  cursor: pointer;
+
+}  
+
+.header__itemn:last-child {
+  margin-left: 0;
+}
+
+.header__link {
+  font-family: 'Inter', ;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 5.0rem;
+  color: $color-block-title;
+  transition: all .3s ease-in-out;
+  @include media-tablet-big {
+    font-size: 2.5rem;
+  }
+}
+
+.header__link:hover {
+  color: $color-form;
+  @include media-tablet {
+    color: $color-block-title;
+  }
+}

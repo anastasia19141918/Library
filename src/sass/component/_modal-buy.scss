@@ -1,0 +1,239 @@
+.modal-buy {
+  position: fixed;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s all;
+  pointer-events: none;
+}
+
+.modal-buy__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.modal-buy__body {
+  top: 5%;
+  left: 35%;
+  width: 650px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-block-title;
+  @include media-destop-small {
+    top: 10px;
+    left: 20%;
+    bottom: 10px;
+  }
+  @include media-tablet-big {
+    top: 5%;
+    left: 12%;
+  }
+  @include media-tablet {
+    width: 550px;
+    top: 15%;
+    left: 10%;
+  }
+  @include media-tablets {
+    top:0;
+  }
+  @include media-tablet-small {
+    width: 450px;
+    top: 0.5%;
+    left: 8%;
+    bottom: 1%;
+  }
+  @include media-mobile {
+    width: 400px;
+    top: 2%;
+    left: 5%;
+  }
+  @include media-mobile-big {
+    width: 340px;
+    top: 17%;
+    left: 3%;
+  }
+  @include media-mobile-big-active {
+    top: 1%;
+  }
+  @include  media-mobile-iphone {
+    width: 300px;
+    top: 17%;
+    left: 3%;
+  }
+  @include media-mobile-samsungS8 {
+    top:0%;
+  }
+  @include mobile-smail {
+    width: 290px;
+    top: 17%;
+    left: 2%;
+  }
+}
+
+.modal-buy__header {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: row;
+  justify-content:flex-end;
+  text-align: center;
+  background-color: $color-header-footer;
+  @include media-mobile-big {
+    padding: 10px 15px;
+    justify-content:center;
+  }
+  @include  media-mobile-iphone {
+    flex-direction: column-reverse;
+  }
+  @include  media-mobile-iphone {
+    gap: 20px 0;
+  }
+}
+
+.modal-buy__about {
+  margin: 0;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 4.0rem;
+  color: $color-block-title;
+  @include media-tablet-small {
+    font-size: 3.0rem;
+  }
+}
+
+.modal-buy__close {
+  width: 15px;
+  height: 15px;
+  margin-left: 40%;
+  align-self: center;
+  background-image: url('../../src/img/modal/close_buy_btn.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  @include media-mobile {
+    margin-left: 20%;
+  }
+  @include media-mobile-big {
+    margin-left: 10%;
+  }
+  @include  media-mobile-iphone {
+   margin-left: 90%;
+  }
+}
+
+.modal-buy__main {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 0 20px;
+  @include media-mobile-big {
+    flex-direction: column;
+  }
+}
+
+.modal-buy__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-buy__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 15px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.0rem;
+  letter-spacing: 1px;
+  color: $color-black;
+  text-align:  left;
+}
+
+.modal-buy__title_row {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+}
+
+.input__buy {
+  height: 20px;
+  border: 1px solid $color-form;
+  cursor: pointer;
+}
+
+.input__buy_big {
+  width: 200px;
+}
+
+.input__buy_smal {
+  width: 45px;
+}
+
+.modal-buy__text {
+  width: 330px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  color: $color-borber;
+}
+
+.modal-buy__button {
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+}
+
+.modal-buy__butn {
+  position: relative;
+  width: 75px;
+  padding: 5px 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.0rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.modal-buy__notValid {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  margin-top: -20px;
+  color: red;
+  font-size: 1.5rem;
+  transition: 0.5s all;
+  pointer-events: none;
+}
+
+.modal-buy__notValid__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.modal-buy__prase {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 2.0rem;
+  letter-spacing: 1px;
+}
+
+//valid
+
+.input__buy:invalid {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+.input__buy:focus {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}

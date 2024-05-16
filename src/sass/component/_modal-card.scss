@@ -1,0 +1,233 @@
+.modal-profile {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: .5s all;
+  pointer-events: none;
+}
+
+.modal-profile__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.modal-profile__body {
+  top:20%;
+  left: 30%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: $color-block-title;
+  @include media-tablet-big {
+    top:15%;
+    left: 15%;
+  }
+  @include media-tablet {
+    top:10%;
+    left: 8%;
+  }
+  @include media-tablet-small {
+    flex-direction: column;
+    top: 5%;
+    left: 15%;
+  }
+  @include media-mobile-big {
+    top: 5%;
+    left: 5%;
+  }
+  @include media-mobile-samsungA5 {
+    top: 15%;
+    left: 5%;
+    width: 320px;
+  }
+  @include media-mobile-samsungS8 {
+    top: 15%;
+    left: 3%;
+    width: 280px;
+  }
+}
+
+.modal-profile__name {
+  padding: 100px 20px;
+  gap: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-header-footer;
+  @include media-tablet-small {
+    padding: 60px 100px;
+  }
+}
+
+.modal-profile__icon {
+  padding: 40px;
+  background-color: $color-block-title;
+  color: $color-form;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  align-items: center;
+  text-transform: uppercase;
+  @include media-tablet-small {
+    padding: 50px;
+    align-self: center;
+    font-size: 3.0rem;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 40px 120px;
+    font-size: 4.0rem;
+  }
+  @include media-mobile-samsungS8 {
+    padding: 30px 80px;
+    font-size: 3.5rem;
+  }
+}
+
+.modal-profile__famile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0px;
+  padding: 5px 15px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 2.0rem;
+  color: $color-black;
+  background-color: $color-block-title;
+
+  text-transform: capitalize;
+  @include media-tablet-small {
+    padding: 20px;
+    align-self: center;
+    font-size: 3.0rem;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 25px 80px;
+    font-size: 4.0rem;
+    line-height: 5.0rem;
+  }
+  @include media-mobile-samsungS8 {
+    padding: 15px 60px;
+    font-size: 3.5rem;
+  }
+}
+
+.modal-profile__desk {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 160px 25px 25px;
+  @include media-tablet {
+    padding: 25px 100px 25px 25px;
+  }
+  @include media-tablet-small {
+    padding: 20px 70px 20px 20px;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 20px 25px 20px 20px;
+  }
+  @include media-mobile-samsungS8 {
+    padding: 20px 30px 20px 20px;
+  }
+}
+
+.modal-profile__title {
+  margin: 0 0 30px 0;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 4.0rem;
+  line-height: 2.0rem;
+  letter-spacing: 1px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.modal-profile__close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 62%;
+  margin-top: -10px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-image: url('../../src/img/modal/close_btn.png');
+  cursor: pointer;
+  @include media-tablet-small {
+    margin-left: 85%;
+    margin-top: -5px;
+  }
+}
+
+.modal-profile__info {
+  margin-bottom: 20px;
+  padding-top: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 0 30px;
+}
+
+.profile__title,.profile__count {
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 2.0rem;
+  color: $color-black;
+}
+
+.profile__icon {
+  width: 21px;
+  height: 21px;
+  display: block;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  cursor: pointer;
+  &__visits {
+    background-image: url('../../src/img/form/Union-form.jpg');
+  }
+  &__bonuses {
+    background-image: url('../../src/img/form/Star-form.jpg');
+  }
+  &__books {
+    background-image: url('../../src/img/form/book-form.jpg');
+  }
+}
+
+.modal-profile__rented {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-profile__book,.modal-profile__books{
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 500;
+  line-height: 2.0rem;
+  color: $color-header-footer;
+}
+
+.modal-profile__books {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.modal-profile__item {
+  margin-bottom: 15px;
+}
+
+
+
+
+

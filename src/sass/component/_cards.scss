@@ -1,0 +1,304 @@
+.libraryCard {
+  padding: 0 0 85px 0;
+  @include media-destop  {
+    padding: 20px 45px 70px;
+  }
+  @include media-tablet {
+    padding: 0px 0px 40px 0px;
+  }
+  @include media-mobile {
+    padding: 0 10px 20px 10px;
+  }
+}
+
+.libraryCard__title {
+  letter-spacing: 1.8px;
+}
+
+.libraryCard__cards {
+  position: relative;
+  display: flex;
+  padding: 40px 0px 0px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include media-destop  {
+    flex-direction: column;
+    gap: 60px 0;
+  }
+}
+
+.libraryCard__block {
+  //pointer-events: none;
+  //opacity: 0;
+  @include media-destop-small {
+    margin: auto;
+  }
+  @include media-tablet {
+    margin: 0 0 0px 11%;
+  }
+  @include media-tablet-small {
+    margin: auto;
+  }
+}
+
+.libraryCard__form-title {
+  margin: 0 0 30px 0;
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 36px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  @include media-tablet {
+    margin: 0 60px 30px 0px;
+  }
+  @include media-mobile-big {
+    margin: 0 0px 30px 0px;
+  }
+  @include media-mobile-samsungA5 {
+    margin: 0 50px 30px 0px;
+  }
+  @include media-mobile-samsungS8 {
+    margin: 0 97px 30px 0px;
+  }
+  @include mobile-smail {
+    margin: 0 90px 30px -40px;
+    font-size: 2.5rem;
+  }
+}
+
+.libraryCard__form {
+  padding: 20px 20px 26px 20px;
+  border: 3px solid $color-form;
+  @include media-destop-small {
+    width: 600px;
+  }
+  @include media-tablet {
+    width: 558px;
+  }
+  @include media-mobile-big {
+    width: 490px;
+  }
+  @include media-mobile {
+    padding: 0;
+    border: none;
+  }
+  @include media-mobile {
+    width: 430px;
+  }
+}
+
+.form {
+  width: 524px;
+  margin-bottom: 20px;
+  padding: 17px 17px 5px 17px;
+  background-color: $color-form;
+  @include media-mobile-big {
+    width: 450px;
+  }
+  @include media-mobile {
+    width: 380px;
+    margin: auto;
+  }
+  @include media-mobile-samsungA5 {
+    width: 300px;
+    margin-left: 15px;
+  }
+  @include media-mobile-iphone  {
+    width: 270px;
+  }
+  @include mobile-smail {
+    width: 235px;
+  }
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 5.0rem;
+  letter-spacing: 0.7px;
+  @include media-mobile-iphone  {
+    text-align: center;
+  }
+}
+
+.input__text, .input__number {
+  width: 500px;
+  padding: 10px 0px 5px 20px;
+  margin-bottom: 21px;
+  border-radius: 10px;
+  font-family: 'Forum', sans-serif;
+  font-size: 3.0rem;
+  font-weight: 400;
+  line-height: 5.0rem;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  @include media-mobile-big {
+    width: 400px;
+  }
+  @include media-mobile {
+    width: 300px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 250px;
+  }
+  @include mobile-smail {
+    width: 218px;
+  }
+}
+
+.libraryCard__butn {
+  text-align: center;
+  @include media-mobile {
+    padding: 30px 0px 0px 0px;
+  }
+  @include media-mobile-samsungA5 {
+    padding: 30px 40px 0px 0px;
+  }
+  @include media-mobile-iphone  {
+    padding: 30px 60px 0px 0px;
+  }
+  @include mobile-smail {
+    padding: 30px 140px 0px 0px;
+  }
+}
+
+.libraryCard__button {
+  width: 242px;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.libraryCard__button:hover {
+  background-color: $color-form;
+  border: 1px solid $color-form;
+  @include media-tablet {
+    background-color: transparent;
+    border: 1px solid $color-black;
+  }
+}
+
+.libraryCard__account {
+  //pointer-events: none;
+  //opacity: 0;
+  position: relative;
+  text-align: right;
+  @include media-destop-small {
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+  }
+  @include media-tablet {
+    padding: 23px 40px 0px 40px;
+  }
+}
+
+.libraryCard__account-title {
+  margin: 0 0 30px 0;
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 36px;
+  letter-spacing: -1.6px;
+  @include media-tablet {
+    margin: 0 0px 37px 22px;
+  }
+  @include mobile-smail {
+    margin: 0 0px 37px 0px;
+    font-size: 2.5rem;
+  }
+}
+
+.libraryCard__text {
+  width: 470px;
+  margin: 0 0 36px 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 0.6px;
+  @include media-destop-small {
+    width: 600px;
+    margin: auto;
+  }
+  @include media-tablet {
+    margin: 0 50px 5px;
+  }
+  @include media-tablet-small {
+    margin: auto;
+  }
+  @include media-mobile-big {
+    width: 390px;
+  }
+  @include media-mobile-samsungA5 {
+    width: 320px;
+  }
+  @include media-mobile-iphone  {
+    margin-left: -40px;
+  }
+  @include mobile-smail {
+    width: 280px;
+    margin-left: -50px;
+  }
+}
+
+.libraryCard__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  gap: 0 20px;
+  @include media-destop-small {
+   padding: 36px 0px 0px 0px;
+   justify-content: center;
+  }
+  @include media-tablet {
+    margin: 0 0 0 15px;
+  }
+  @include media-mobile-samsungA5 {
+    margin-left: 25%;
+    flex-direction: column;
+    gap: 30px 0px;
+  }
+  @include media-mobile-iphone  {
+    margin-left: 15%;
+  }
+}
+
+.libraryCard__btn {
+  width: 75px;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.0rem;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  @include media-mobile-samsungA5 {
+    width: 180px;
+    padding: 20px;
+    font-size: 2.0rem;
+  }
+}
+
+.libraryCard__btn:hover {
+  background-color: $color-form;
+  border: 1px solid $color-form;
+  @include media-tablet {
+    background-color: transparent;
+    border: 1px solid $color-black;
+  }
+}
+

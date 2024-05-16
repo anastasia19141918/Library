@@ -1,0 +1,98 @@
+.footer {
+  padding: 18px 0 60px 0;
+  background-color: $color-header-footer;
+  @include media-destop  {
+    padding: 18px 35px 60px 35px;
+  }
+  @include media-tablet {
+    padding: 18px 25px 60px 25px;
+  }
+  @include media-mobile-big {
+    padding: 18px 25px 30px 25px;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  margin-bottom: 17px;
+  flex-direction: row;
+  justify-content: space-between;
+  @include media-mobile-samsungS8 {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+}
+
+.footer__text {
+  width: 229px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  color: $color-block-title;
+  @include media-mobile-samsungS8 {
+   font-size: 2.0rem;
+  }
+}
+
+.footer__media {
+  display: flex;
+  flex-direction: row;
+  gap: 0 15px;
+}
+
+.footer__days {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.footer__schedule {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  color: $color-block-title;
+  @include media-mobile-samsungS8 {
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+  }
+}
+
+.footer__line {
+  width: 100%;
+  margin-bottom: 48px;
+  border: 1px solid $color-block-title;
+}
+
+.footer__school {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include media-mobile-big {
+    flex-direction: column;
+    gap: 20px 0px;
+  }
+}
+
+.footer__inf {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  letter-spacing: 2px;
+  color: $color-block-title;
+  transition: all .4s ease-in-out;
+  @include media-mobile-big {
+    font-size: 2.0rem;
+  }
+}
+
+.footer__inf:hover {
+  transform: scale(1.2);
+  @include media-tablet {
+    transform: scale(1.0);
+  }
+}

@@ -1,0 +1,74 @@
+.header {
+  padding: 20px 35px 5px 30px;
+  background-color: $color-header-footer;
+  @include media-destop  {
+    padding: 20px 25px 5px 25px;
+  }
+  @include media-tablet-big {
+    padding: 20px 35px 5px 35px;
+  }
+  @include media-tablet {
+    padding: 20px 20px 5px 20px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__title {
+  margin: 0;
+  color: $color-block-title;
+  font-family: 'Forum', sans-serif;
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 5.0rem;
+  letter-spacing: 0.8px;
+  @include media-mobile-samsungS8 {
+    font-size: 2.5rem;
+  }
+  @include  mobile-smail {
+    font-size: 2.0rem;
+    line-height: 4.0rem;
+  }
+  @include media-mobile-iphone {
+    line-height: 3.0rem;
+  }
+}
+
+.header__icon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background-image: url('../../src/img/header/icon_profile.svg');
+  background-size: 28px 28px;
+  align-self: center;
+  color: $color-form;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include media-tablet-big {
+    position: relative;
+    margin-right: 11%;
+  }
+  @include media-mobile-samsungA5 {
+    margin-right: 8%;
+  }
+  @include media-mobile-iphone {
+    margin-right: 12%;
+    width: 45px;
+    height: 45px;
+    background-size: 31px 31px;
+    background-repeat: no-repeat;
+  }
+}
+
+.header__icon__activeProf {
+  background-image: none;
+}
+
+.header__icon__Prof {
+
+}
